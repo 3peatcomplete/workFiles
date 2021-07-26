@@ -1,0 +1,22 @@
+._dis{
+    pointer-events: none;
+}
+.section{
+    padding: 70px 0;
+    @media (max-width:$md3+px){
+         padding: 55px 0; 
+    }
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 70px;    
+    &-why{
+        text-align: center;
+    }
+    @media (max-width:$md3+px){
+         margin-bottom: 35px;
+         font-size: 33px; 
+    }
+}

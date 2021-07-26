@@ -1,0 +1,159 @@
+//====================================================================================================
+.header {
+	background-color: $c_0;
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	z-index: 50;
+	color: $c_0;
+	height: 50px;
+	color: $c_f;
+	// .header__content
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+		align-items: center;
+	}
+	// .header__menu
+	&__menu {
+	}
+
+
+}
+
+.header__logo{
+	font-size: 30px;
+	font-weight: 700;
+	position: relative;
+	z-index: 50;
+	span{
+		color: $c_m;
+	}
+}
+
+.header__social{
+	font-size: 25px;
+	a+a{
+		margin-left: 15px;
+	}
+	a{
+		transition: color .3s ease;
+		&:hover{
+			color: $c_m;
+		}
+	}
+}
+
+
+.menu__list {
+	display: flex;
+	a{
+		transition: color .3s ease;
+		&:hover{
+			color: $c_m;
+		}
+	}
+	> li + li {
+		margin-left: 25px;
+	}
+	li {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+
+.icon-menu {
+	display: none;
+}
+
+.menu__link{
+	@media (min-width: 991px){
+		&._active{
+			color: red;
+		}
+	}
+
+}
+
+//====================================================================================================
+
+//====================================================================================================
+
+body._touch {
+	.menu__list {
+		flex-direction: column;
+		li {
+			margin-top: 15px;
+			margin-left: 0;
+		}
+		li {
+			position: relative;
+			flex-wrap: wrap;
+
+			
+		}
+	}
+
+	.menu__body {
+		position: fixed;
+		overflow: auto;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 20;
+		height: 100%;
+		background-color: rgba($color: $c_0, $alpha: 0.8);
+		padding-top: 70px;
+		transition: left 0.3s ease;
+		left: -100%;
+		padding-left: $sqPd + px;
+		padding-right: $sqPd + px;
+
+		&._active {
+			left: 0;
+		}
+	}
+
+	.icon-menu {
+		display: block;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 50;
+		position: relative;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: $c_f;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&._active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}
+
+//====================================================================================================

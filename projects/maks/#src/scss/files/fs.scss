@@ -1,0 +1,55 @@
+.fs {
+    height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-image: url(../img/fs.jpg);
+    background-size: cover;
+    color: $c_f;
+    background-attachment: fixed;
+    ._container {
+        position: relative;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        align-self: flex-start;
+    }
+}
+
+.fs__arrow {
+    position: absolute;
+    font-size: 25px;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    &-item{
+        animation: arrow 1s infinite ease-in alternate;
+
+    }
+}
+
+@keyframes arrow {
+    0% {
+    }
+    100% {
+        transform: translate(0%, -50%);
+    }
+}

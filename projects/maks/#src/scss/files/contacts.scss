@@ -1,0 +1,70 @@
+.contacts__title {
+}
+.contacts__row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$md3+px){
+         flex-direction: column;
+    }
+}
+
+.contacts__inner {
+    flex: 0 1 400px;
+    @media (max-width:$md3+px){
+         margin-bottom: 50px; 
+    }
+}
+
+.contacts__item {
+    display: flex;
+    flex-direction: column;
+    & + & {
+        margin-top: 40px;
+    }
+}
+.contacts__item-name {
+    font-size: 25px;
+    margin-bottom: 15px;
+    i {
+        color: $c_m;
+        margin-right: 10px;
+    }
+}
+
+.contacts__item-link {
+    margin-top: 10px;
+    align-self: flex-start;
+    padding: 5px;
+}
+.contacts__social {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.contacts__social-link {
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $c_m;
+    }
+    & + & {
+        margin-left: 25px;
+    }
+}
+
+.callback__text {
+    margin-bottom: 15px;
+}
+
+.callback__form-input {
+    margin-bottom: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

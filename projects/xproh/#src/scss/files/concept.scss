@@ -1,0 +1,86 @@
+.concept {
+background-color: rgb(245, 245, 245);
+    // .concept__container
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:$md3+px){
+             flex-direction: column; 
+        }
+    }
+
+    // .concept__content
+
+    &__content {
+    }
+
+    // .concept__text
+
+    &__text {
+        font-size: 16px;
+        margin-bottom: 30px;
+        @media (max-width:$md3+px){
+             margin-bottom: 15px; 
+        }
+    }
+
+    // .concept__title
+
+    &__title {
+        font-size: 37px;
+        max-width: 602px;
+        margin-bottom: 40px;
+        @media (max-width:$md3+px){
+             margin-bottom: 25px; 
+             font-size: 20px;
+        }
+    }
+
+    // .concept__btn
+
+    &__btn {
+        @media (max-width:$md3+px){
+             margin-bottom: 35px; 
+        }
+    }
+
+    // .concept__image
+
+    &__image {
+    }
+}
+.section {
+}
+
+.title {
+}
+.btn {
+}
+.btn-blue {
+}
+
+
+.concept__text ,.concept__title , .concept__btn {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all .7s ease;
+    &._active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.concept__image{
+    
+    @media (min-width:$md3+px){
+        transform: translateX(100px);
+        opacity: 0;
+        transition: all .7s ease;
+        &._active{
+            transform: translateX(0);
+            opacity: 1;
+        }   
+    }
+}

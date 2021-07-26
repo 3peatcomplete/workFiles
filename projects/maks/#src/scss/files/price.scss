@@ -1,0 +1,47 @@
+.price , .price-page {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @media (max-width:$md3+px){
+         padding-top: 55px;
+         padding-bottom: 55px; 
+    }
+}
+._container {
+}
+.price__item {
+    background-color: rgba($color: $c_m, $alpha: .1);
+    border: 1px solid $c_m;
+    &+&{
+        margin-top: 30px;
+    }
+}
+.price__item-body {
+    padding: 15px 25px;
+}
+.price__item-title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.price__item-list {
+
+}
+.price__item-list__item {
+  
+    &:hover{
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+.price__item-list__link {
+    &::before{
+        content:'\f35d';
+        font-family: 'Font Awesome 5 Free';
+        color: #000;
+        font-weight: 900;
+    }
+    &+&{
+        margin-top: 10px;
+    }
+}

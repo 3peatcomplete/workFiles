@@ -1,0 +1,30 @@
+.why {
+
+}
+.why__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:$md3+px){
+         flex-direction: column; 
+    }
+}
+.why__image {
+    flex: 1 1 50%;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    @media (max-width:$md3+px){
+         margin-right: 0;
+         margin-bottom: 25px; 
+    }
+}
+.why__list {
+    flex: 1 1 50%;
+}
+
+.why__text {
+    &+&{
+        margin-top: 15px;
+    }
+}

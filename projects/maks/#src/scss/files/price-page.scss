@@ -1,0 +1,59 @@
+.price-page {
+}
+
+.price-page__title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.price-page__body {
+    border: 1px solid #ccc;
+    padding-top: 0;
+}
+.price-page__body-title {
+    background-color: $c_m;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+.price-page__item {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    &+&{
+        border-top: 1px solid #ccc;
+    }
+}
+.price-page__item-col {
+    display: flex;
+    flex-direction: column;
+}
+.price-page__item-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.price-page__item-sentence {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.price-page__item-range {
+    margin-top: auto;
+}
+.price-page__item-average {
+    margin-left: 20px;
+    flex: 0 0 140px;
+}
+.price-page__item-average__title {
+    margin-bottom: 15px;
+}
+.price-page__item-average__item {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.price-page__item-average__descr {
+margin-top: 15px;
+    text-align: center;
+}
