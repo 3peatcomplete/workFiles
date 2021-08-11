@@ -186,6 +186,7 @@ data-spollers="768,min" - спойлеры будут работать толь�
 */
 
 // SPOLLERS
+
 const spollersArray = document.querySelectorAll('[data-spollers]');
 if (spollersArray.length > 0) {
 	// Получение обычных слойлеров

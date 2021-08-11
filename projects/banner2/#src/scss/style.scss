@@ -20,7 +20,7 @@ $md4: 479.98;
 
 $c_f: #fff;
 $c_0: #000;
-$cm: #003eeb;
+$cm: #5eeb00;
 
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
@@ -118,8 +118,8 @@ body {
 			margin-left: 0;
 		}
 		&:nth-child(2){
-			box-shadow: 0px 0px 20px 10px lighten($color: #e80202, $amount: 1%);
-			background: linear-gradient(180deg, #e80202 0%, darken( #e80202 , 20%) 100%);
+			box-shadow: 0px 0px 20px 10px lighten($color: #838383, $amount: 1%);
+			background: linear-gradient(180deg, #838383 0%, darken( #838383 , 20%) 100%);
 	
 		}
 	}
