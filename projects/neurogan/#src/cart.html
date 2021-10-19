@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Корзина"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html',{})
+        <div class="page ">
+            <div class="cart">
+                <div class="cart__container _container">
+                    <h2 class="cart__title title">
+                        Корзина
+                    </h2>
+                    <div class="cart__body">
+                        <div class="cart__items">
+                            <div class="cart-item cart__item">
+                                <div class="cart-item__body">
+                                    <div class="cart-item__img">
+                                        <img src="img/catalog/1.png" alt="">
+                                    </div>
+                                    <div class="cart-item__name">
+                                        CBD масло
+                                        широкого спектра
+                                    </div>
+                                    <div class="cart-item__quantity quantity">
+                                        <div class="quantity__button quantity__button_plus"></div>
+                                        <div class="quantity__input">
+                                            <input class="" name="quantity" type="text" value="1">
+                                        </div>
+                                        <div class="quantity__button quantity__button_minus"></div>
+                                    </div>
+
+                                    <div class="cart-item__price">
+                                        <span>945</span> грн
+                                    </div>
+                                    <div class="cart-item__del">
+                                        <img src="img/icons/close.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item cart__item">
+                                <div class="cart-item__body">
+                                    <div class="cart-item__img">
+                                        <img src="img/catalog/1.png" alt="">
+                                    </div>
+                                    <div class="cart-item__name">
+                                        CBD масло
+                                        широкого спектра
+                                    </div>
+                                    <div class="cart-item__quantity quantity">
+                                        <div class="quantity__button quantity__button_plus"></div>
+                                        <div class="quantity__input">
+                                            <input class="" name="quantity" type="text" value="1">
+                                        </div>
+                                        <div class="quantity__button quantity__button_minus"></div>
+                                    </div>
+
+                                    <div class="cart-item__price">
+                                        <span>945</span> грн
+                                    </div>
+                                    <div class="cart-item__del">
+                                        <img src="img/icons/close.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="cart__form cart-form" action="send.php" method="post" data-ajax='1'
+                            data-messange="thanks">
+                            <div class="cart-form__title">Введите ваши данные</div>
+                            <input class="" required type="text" name="name" placeholder="Имя">
+                            <input class="" required type="tel" name="phone" data-mask="+380 (99) 999-99-99"
+                                placeholder="Номер телефона">
+                            <input class="" required type="tel" name="sity" placeholder="Город">
+                            <input class="" required type="tel" name="post" placeholder="Отделение новой почты">
+                            <button type="submit" class="cart-form__btn btn">Оформить заказ</button>
+                        </form>
+
+                        <div class="cart__outprice outprice">
+                            <div class="outprice__text"> К оплате :</div>
+                            <div class="outprice__price">
+                                <span>2000</span> грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('_footer.html',{})
+    </div>
+    @@include('_popup.html',{})
+    @@include('_js.html',{})
+</body>
+
+</html>

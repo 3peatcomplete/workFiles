@@ -1,0 +1,104 @@
+.geography {
+    // .geography__body
+
+    &__body {
+        display: grid;
+        gap: 22px;
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width: $md2+px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .geography__filial
+
+    &__filial {
+    }
+}
+.filial {
+    display: grid;
+    gap: 30px;
+    max-height: 523px;
+    @media (max-width:$md2+px){
+        max-height: 250px;
+    }
+    overflow: auto;
+
+    // .filial__item
+
+    &__item {
+    }
+}
+.item-filial {
+    // .item-filial_tel
+
+    &_tel {
+        font-weight: 600;
+    }
+
+    // .item-filial_email
+
+    &_email {
+    }
+
+    // .item-filial__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 50px;
+
+        color: #000000;
+    }
+
+    // .item-filial__inner
+
+    &__inner {
+        display: grid;
+        gap: 17px;
+        padding-left: 7px;
+        justify-content: start;
+    }
+
+    // .item-filial__row
+
+    &__row {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 16px;
+        line-height: 21px;
+        .icon {
+            margin-right: 8px;
+            margin-top: 0;
+        }
+    }
+}
+.info-item {
+    // .info-item__icon
+
+    &__icon {
+    }
+}
+
+.map {
+    iframe{
+        min-height: 523px;
+        @media (max-width:$md2+px){
+            min-height: 250px;
+        }
+    }
+    &_contacts{
+        iframe{
+            min-height: 350px;
+            @media (max-width:$md2+px){
+                min-height: 250px;
+            }
+        }
+    }
+}
+.contacts{
+    margin-bottom: 40px;
+}
+.contacts__body{
+    padding-top: 20px;
+}

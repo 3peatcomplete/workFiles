@@ -1,0 +1,137 @@
+.situation {
+    position: relative;
+    z-index: 2;
+    // .situation__container
+
+    &__container {
+        position: relative;
+    }
+
+    // .situation__title
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 66px;
+        color: $orangeColor;
+        @media (max-width:$md2+px){
+            font-size: 18px;
+            margin-bottom: 20px;
+            span{
+                display: none;
+            }
+        }
+    }
+
+    // .situation__row
+
+    &__row {
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        @media (max-width:$md2+px){
+            flex-direction: column;
+        }
+    }
+
+    // .situation__img
+
+    &__img {
+        position: absolute;
+        left: -230px;
+        top: 0px;
+        @media (max-width:$md2+px){
+            position: relative;
+            left: auto;
+            top: auto;
+            margin-bottom: 30px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    // .situation__items
+
+    &__items {
+        max-width: 650px;
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px ;
+        font-size: 18px;
+        @media (max-width:$md2+px){
+            font-size: 14px;
+            gap: 15px;
+        }
+    }
+
+    // .situation__item
+
+    &__item {
+        padding: 8px 51px;
+        border-radius: 50px;
+        @media (max-width:$md2+px){
+            padding: 4px 28px;
+        }
+    }
+    &__item {
+
+        // .situation__item_yellow
+
+        &_yellow {
+            background-color: #FFCE33;
+        }
+
+        // .situation__item_cb
+
+        &_cb {
+            color: $mainColor;
+        }
+
+        // .situation__item_blue
+
+        &_blue {
+            background-color: #356F7C;
+        }
+
+        // .situation__item_cw
+
+        &_cw {
+            color: #fff;
+        }
+
+        // .situation__item_orange
+
+        &_orange {
+            background-color: $orangeColor;
+        }
+
+        // .situation__item_light-blue
+
+        &_light-blue_1 {
+            background-color: #6CB4B8;
+        }
+        &_light-blue {
+            background-color: #BEDCE3;
+        }
+    }
+}
+
+
+
+
+
+.second-situation_bg{
+    position: absolute;
+    bottom: 300px;
+    left: 0;
+    img{
+        width: 100%;
+    }
+    @media (max-width:$md2+px){
+        right: 0;
+        left: auto;
+        width: 100%;
+        
+    }
+}

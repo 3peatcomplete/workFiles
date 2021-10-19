@@ -1,0 +1,154 @@
+.contactsBlk {
+    padding-bottom: 50px;
+    // .contactsBlk__container
+
+    &__container {
+        display: flex;
+        @media (max-width:$md2+px){
+            flex-direction: column;
+        }
+    }
+}
+
+.contactsBlk-col {
+    &:not(:last-child){
+        @media (max-width:$md2+px){
+            margin-bottom: 30px;
+        }
+    }
+    // .contactsBlk-col__title
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    // .contactsBlk-col__text
+
+    &__text {
+        color: #313844;
+        max-width: 390px;
+        margin-bottom: 28px;
+    }
+
+    // .contactsBlk-col__info
+
+    &__info {
+        margin-bottom: 30px;
+    }
+
+    // .contactsBlk-col__linksInfo
+
+    &__linksInfo {
+        a {
+            text-decoration-line: underline;
+
+            color: #005689;
+        }
+    }
+
+    // .contactsBlk-col__links
+
+    &__links {
+    }
+
+    // .contactsBlk-col__logos
+
+    &__logos {
+    }
+    &:nth-child(1) {
+        margin-right: 40px;
+        flex: 0 0 440px;
+    }
+    &:nth-child(2) {
+        margin-right: auto;
+        flex: 0 0 auto;
+    }
+}
+.info {
+    // .info__item
+
+    &__item {
+    }
+}
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    // .info-item__icon
+
+    &__icon {
+        flex: 0 0 20px;
+        margin-top: 3px;
+        width: 20px;
+        margin-right: 8px;
+        fill: #005689;
+    }
+
+    // .info-item__text
+
+    &__text {
+    }
+
+    // .info-item__email
+
+    &__email {
+        a {
+            text-decoration-line: underline;
+
+            color: #005689;
+            &:hover{
+                color: #30A8D4;
+            }
+        }
+    }
+
+    // .info-item__links
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        a {
+            align-self: flex-start;
+            font-size: 16px;
+            line-height: 35px;
+            color: #313844;
+            &:hover,
+            &:focus {
+                text-decoration-line: underline;
+
+                color: #30a8d4;
+            }
+        }
+    }
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+.icon {
+}
+.contactsBlk-logos {
+    // .contactsBlk-logos__item
+
+    &__item {
+        width: 223px;
+        height: 67px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $c_f;
+        border-radius: 4px;
+        img{
+            max-height: 100%;
+        }
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.contacts__body{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr );
+}

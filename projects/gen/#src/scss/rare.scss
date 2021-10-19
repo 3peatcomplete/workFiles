@@ -1,0 +1,127 @@
+.rare {
+    // .rare__container
+
+    &__container {
+    }
+
+    // .rare__title
+
+    &__title {
+    }
+
+    // .rare__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 36px 27px;
+        @media (max-width:$md2+px){
+            grid-template-columns:  repeat(2,1fr);
+        }
+        @media (max-width:$md4+px){
+            grid-template-columns: 1fr ;
+              
+        }
+    }
+
+    // .rare__item
+
+    &__item {
+    }
+}
+.title {
+    // .title__text
+
+    &__text {
+    }
+}
+.rare-item {
+    overflow: hidden;
+    &:hover{
+        &::after{
+            content:'';
+            opacity: 1;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%),
+            linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    }
+    &::after{
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        opacity: 0;
+        transition: all .3s ease;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(0deg, rgba(48, 168, 212, 0.58), rgba(48, 168, 212, 0.58));
+        box-shadow: 0px 15px 23px rgba(157, 174, 208, 0.15);
+    }
+    position: relative;
+    // .rare-item__btn
+
+    &__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        svg {
+            width: 85px;
+            fill: #ef363e;
+        }
+    }
+
+    // .rare-item__text
+
+    &__text {
+        position: relative;
+        z-index: 5;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        /* or 125% */
+        text-align: center;
+        max-width: 285px;
+        color: $c_f;
+        margin-bottom: 25px;
+        position: absolute;
+        bottom: 0px ;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50px;
+        overflow: auto;
+        @media (max-width:$md2+px){
+            font-size: 14px;
+            line-height: 16px;
+            height: 32px;
+        margin-bottom: 20px;
+
+        }
+    }
+    img{
+    }
+}
+.icon {
+}
+.btn {
+    // .btn_dflt
+
+    &_dflt {
+    }
+
+    // .btn_more
+
+    &_more {
+    }
+}

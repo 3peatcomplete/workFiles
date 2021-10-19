@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Ошибка"
+})
+
+<body>
+	@@include('_sprite.html',{})
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<div class="page ">
+            <div class="s404">
+                <div class="s404__container _container">
+                    <div class="s404__title">
+                        Ошибка 
+                    </div>
+                    <div class="s404__text">
+                        Такой страницы не существует
+                    </div>
+                    <div class="s404__btns">
+                        <a href="javascript:history.back();" class="s404__btn btn_dflt">
+                            Вернуться назад
+                        </a>
+                        <a href="." class="s404__btn btn_dflt">
+                            На главную
+                        </a>
+
+                        
+                    </div>
+                </div>
+            </div>
+		</div>
+        @@include('_contactsBlk.html',{})
+        @@include('_footer.html',{})
+    
+	</div>
+
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

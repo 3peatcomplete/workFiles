@@ -1,0 +1,55 @@
+.fs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url(../img/fsBg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+
+    z-index: 10;
+    // .fs__container
+
+    &__container {
+    }
+
+    // .fs__body
+
+    &__body {
+    }
+
+    // .fs__title
+
+    &__title {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        @media (max-width:$md2+px){
+            font-size: 35px;
+        }
+    }
+
+    // .fs__subtitle
+
+    &__subtitle {
+        max-width: 500px;
+        margin: 0px auto 30px auto;
+    }
+
+    // .fs__btns
+
+    &__btns {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    // .fs__btn
+
+    &__btn {
+    }
+}

@@ -1,0 +1,335 @@
+.fs {
+    position: relative;
+    // .fs__container
+
+    &__container {
+    }
+}
+.dashboard-fs {
+    background-image: url(../img/dashboard-fsBg.jpg);
+
+    // .dashboard-fs__content
+
+    &__content {
+        flex-grow: 1;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .dashboard-fs__top
+
+    &__top {
+        flex-grow: 1;
+        display: flex;
+    }
+
+    // .dashboard-fs__tournaments
+
+    &__tournaments {
+        flex: 50%;
+    }
+
+    // .dashboard-fs__news
+
+    &__news {
+        flex: 50%;
+    }
+
+    // .dashboard-fs__bottom
+
+    &__bottom {
+    }
+}
+.tournaments {
+    // .tournaments__body
+
+    &__body {
+        position: relative;
+    }
+
+    // .tournaments__title
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: $c_f;
+        margin-bottom: 4px;
+        margin-left: 15px;
+    }
+
+    // .tournaments__from
+
+    &__from {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 25px;
+        color: $c_away;
+    }
+
+    // .tournaments__items
+
+    &__items {
+        padding-right: 25px;
+        @include brd($c_main , 'r');
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+
+    // .tournaments__item
+
+    &__item {
+    }
+}
+.item-tournaments {
+    
+    min-height: 154px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: $c_31;
+    // .item-tournaments__game
+
+    &__game {
+        color: $c_main;
+    }
+
+    // .item-tournaments__text
+
+    &__text {
+        color: #111;
+        font-style: italic;
+    }
+}
+.news {
+    padding-left: 25px;
+
+    // .news__body
+
+    &__body {
+    }
+
+    // .news__title
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: $c_f;
+        margin-bottom: 4px;
+        margin-left: 15px;
+    }
+
+    // .news__favourites
+
+    &__favourites {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 25px;
+        color: $c_away;
+    }
+
+    // .news__items
+
+    &__items {
+        display: grid;
+    }
+
+    // .news__item
+
+    &__item {
+    }
+}
+.item-news {
+
+    background-color: $c_31;
+    position: relative;
+    display: flex;
+    min-height: 64px;
+    &:not(:last-child){
+        margin-bottom: 26px;
+    }
+    // .item-news__img
+
+    &__img {
+        width: 130px;
+
+    }
+
+    // .item-news__inner
+
+    &__inner {
+        max-width: 250px;
+        padding-left: 20px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    // .item-news__title
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        color: $c_f;
+        span{
+            color: $c_main;
+
+        }
+    }
+
+    &__data{
+        font-size: 9px;
+        margin-top: 2px;
+        span{
+            color: $c_2e;
+        }
+    }
+
+    &__share{
+
+    }
+
+}
+
+.news-share{
+    position: absolute;
+    top: 105%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    &__text{
+        margin-right: 10px;
+        font-size: 8px;
+    }
+    &__links{
+        display: flex;
+        gap:15px ;
+        
+    }
+    &__link{
+    }
+}
+
+.news-notice{
+    position: absolute;
+    top: 105%;
+    left: 0;
+    color: $c_offline;
+    font-size: 8px;
+}
+
+.tournaments__more{
+    color: $c_2e;
+    font-size: 8px;
+}
+
+.dashboard-fs {
+    &__bottom{
+        flex:313px ;
+    }
+    // .dashboard-fs__cup
+
+    &__cup {
+    }
+}
+.cup {
+    width: 380px;
+    // .cup__left
+
+    &__left {
+    }
+}
+.left-cup {
+
+    // .left-cup__location
+
+    &__location {
+        margin-bottom: 18px;
+
+    }
+
+    // .left-cup__regional
+
+    &__regional {
+    }
+}
+.cup-location {
+
+    display: flex;
+    color: $c_2e;
+
+    font-weight: 300;
+    // .cup-location__sity
+
+    &__sity {
+        font-size: 14px;
+        span{
+            &:nth-child(1){
+                color: $c_away;
+                margin-right: 5px;
+            }
+            &:nth-child(2){
+                margin-right: 15px;
+            }
+        }
+    }
+
+    // .cup-location__players
+
+    &__players {
+        display: flex;
+        margin-left: auto;
+        flex: 0 0 auto;
+        align-items: center;
+        p{
+            color: $c_away;
+            margin-right: 5px;
+        }
+        span{
+            color: $c_main;
+        }
+    }
+}
+.cup-regional {
+    position: relative;
+    // .cup-regional__title
+
+    &__title {
+        font-size: 70px;
+        font-weight: 700;
+        color: $c_f;
+        span{
+            color: $c_main;
+        }
+    }
+
+    // .cup-regional__time
+
+    &__time {
+
+    }
+}
+.regional-time {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    // .regional-time__date
+
+    &__date {
+        color: $c_2e;
+    }
+
+    // .regional-time__time
+
+    &__time {
+        color: $c_main;
+        text-align: right;
+    }
+}

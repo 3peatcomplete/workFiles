@@ -1,0 +1,58 @@
+.partner {
+    padding-top: 70px;
+    padding-bottom: 125px;
+    @include brd($c_31 , 't');
+    background-color: $c_0e;
+    // .partner__container
+
+    &__container {
+    }
+
+    // .partner__content
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between  ;
+        margin-bottom: 100px;
+    }
+
+    // .partner__title
+
+    &__title {
+        max-width: 442px;
+    }
+
+    // .partner__col
+
+    &__col {
+    }
+
+    // .partner__col-title
+
+    &__col-title {
+        font-size: 20px;
+        color: $c_main;
+        margin-bottom: 14px;
+        margin-left: 10px;
+        font-weight: 500;
+    }
+
+    // .partner__col-text
+
+    &__col-text {
+        max-width: 520px;
+        p:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+
+    // .partner__logos
+
+    &__logos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr );
+        justify-items: center;
+        row-gap: 50px;
+    }
+}

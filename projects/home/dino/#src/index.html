@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('_header.html',{})
+        <div class="page main ">
+            <a href="#callback" class="btn-callback _popup-link">
+                <span>Принять участие</span>
+
+                <picture>
+
+                    <source media="(max-width:991px)" srcset="img/btn-callbackMobile.svg">
+                    <img src="img/btn-callback.svg" alt="">
+                </picture>
+            </a>
+            <div c  lass="fs main-fs ">
+                <div class="fs__content _container second-fs__content md">
+                    <div class="fs-top second-fs__top second__top-title">
+                        Онлайн курс по изучению <span>КИТАЙСКОГО ЯЗЫКА</span> на базе Политехнического Университета
+                        города Шеньчжень
+                    
+                    </div>
+                    <div class="main-fs__inner">
+                        <picture>
+                            <source>
+                            <source srcset="img/fsMobile.svg" media="(max-width: 991px)">
+                            <img src="img/fs.svg" alt="" class="second-fs__bg main__bg">
+                        </picture>
+
+                        <div class="main-fs__body">
+
+                            <div class="main-fs__title">Выучите язык с помощью профессоров <span> китайского
+                                    университета</span></div>
+                            <div class="main-fs__subtitle">
+                                Вы овладеете базовым китайским языком за <span>2,5 месяца</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="fs-info">
+                <div class="fs-info__container _container">
+                
+                    <div class="fs-info__row">
+                        <span>
+                            Языковая пара преподавания:
+                        </span>
+                        <span>
+                            Английский - Китайский
+                        </span>
+                    </div>
+                    <div class="fs-info__text">
+                        Занятия проходят <span>онлайн</span> с возможностью пересматривать записи
+                    </div>
+                    <div class="fs-info__subtext">
+                        Набор в группу каждых <span>2 недели</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <form method="POST" action="send.php" data-message='message' data-ajax='1' class=" main-form">
+
+                <div class="contacts-form__container _container">
+
+                    <div class="contacts-form__text main-form__text">
+                        Подать заявку в группу
+                    </div>
+                    <div class="contacts-form__row">
+                        <label class="contacts-form__input">
+                            <div class="contacts-form__input-text">Им’я</div>
+                            <input required autocomplete="off" type="text" name="name" class="input ">
+                        </label>
+                        <label class="contacts-form__input">
+                            <div class="contacts-form__input-text">E-mail</div>
+                            <input required autocomplete="off" type="email" name="email" class="input">
+                        </label>
+                        <label class="contacts-form__input">
+                            <div class="contacts-form__input-text">Phone</div>
+                            <input required autocomplete="off" type="tel" name="tel" class="input">
+                        </label>
+                        <button type="submit" class="contacts-form__btn btn btn-orange">
+                            Подать заявку
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <div class="numbers">
+                <div class="numbers__decor">
+                    <picture>
+                        <source media="(max-width:991px )" srcset="img/numbersBgMobile.svg">
+                        <img src="img/numbersBg.svg" alt="">
+                    </picture>
+                </div>
+
+                <div class='numbers__container _container md'>
+                    <div class="numbers__body">
+                        <div class="numbers__item">
+                            <div class="numbers__item-number">
+                                +32
+                            </div>
+                            <div class="numbers__item-text">
+                                урока онлайн
+                            </div>
+                        </div>
+                        <div class="numbers__item">
+                            <div class="numbers__item-number">
+                                +56
+                            </div>
+                            <div class="numbers__item-text">
+                                часов занятий
+                            </div>
+                        </div>
+                        <div class="numbers__item">
+                            <div class="numbers__item-number">
+                                +70
+                            </div>
+                            <div class="numbers__item-text">
+                                часов домашних заданий
+                            </div>
+                        </div>
+                        <div class="numbers__item">
+                            <div class="numbers__item-number">
+                                +12
+                            </div>
+                            <div class="numbers__item-text">
+                                недель длительность курса
+                            </div>
+                        </div>
+                        <div class="numbers__item">
+                            <div class="numbers__item-number">
+                                +3
+                            </div>
+                            <div class="numbers__item-text">
+                                профессора от университета будут вас сопровождать в течении курса
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="because ">
+                <div class="because__container _container">
+                    <div class="because__title md">
+                        Этот курс выбирают потому что обучение происходит:
+                    </div>
+                    <ul class="because__list">
+                        <li>
+                            <img src="img/because.svg" alt="">
+                            профессора от университета будут вас сопровождать в течении курса
+                        </li>
+                        <li>
+                            <img src="img/because.svg" alt="">
+                            у языковых профессоров китайского университета
+                        </li>
+                        <li>
+                            <img src="img/because.svg" alt="">
+                            по эффективной методологии разработанной китайскими лингвистами для иностранцев
+                        </li>
+                        <li>
+                            <img src="img/because.svg" alt="">
+                            онлайн, в реальном времени, с возможностью задавать вопросы на уроках профессорам
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="china-section china-section_1">
+                <div class="china-section__container _container">
+                    <div class="china-section__img">
+                        <img src="img/china.svg" alt="">
+                    </div>
+                    <div class="china-section__translation">
+                        <span>(знания)
+                        </span>
+                        <span>Zhīshì fúhào</span>
+                    </div>
+                    <div class="china-section__music">
+                        <img src="img/music.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="basics">
+                <div class='basics__container _container md'>
+                    <div class="basics__title">Основы китайского языка</div>
+                    <div class="basics__subtitle md">
+                        5 базовых составляющих курса, с помощью которых вы выучите базовый китайский
+                    </div>
+
+                    <div class="basics__row">
+                        <div class="basics__col basics-left">
+                            <div class="basics__item item-basics">
+                                <div class="item-basics__title">
+                                    ЧТЕНИЕ
+                                </div>
+                                <div class="item-basics__text">
+                                    Навык чтения китайских языковых символов
+                                </div>
+                            </div>
+                            <div class="basics__item item-basics">
+                                <div class="item-basics__title">
+                                    НАПИСАНИЕ
+                                </div>
+                                <div class="item-basics__text">
+                                    Навык написания сложной знаковой системы китайского языка
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basics__col basics-center">
+                            <div class="basics__item item-basics">
+                                <div class="item-basics__title">
+                                    АУДИРОВАНИЕ
+                                </div>
+                                <div class="item-basics__text">
+                                    Навык слышать и понимать китайскую речь
+                                </div>
+                            </div>
+                            <div class="basics__image">
+                                <img src="img/basics.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="basics__col basics-right">
+                            <div class="basics__item item-basics">
+                                <div class="item-basics__title">
+                                    ОБЩЕНИЕ
+                                </div>
+                                <div class="item-basics__text">
+                                    Возможность общаться с носителями языка вне занятий
+                                </div>
+                            </div>
+                            <div class="basics__item item-basics">
+                                <div class="item-basics__title">
+                                    ВОКАЛИЗАЦИЯ
+                                </div>
+                                <div class="item-basics__text">
+                                    Навык проговаривания и озвучивания китайской речи
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="china-section china-section_2">
+                <div class="china-section__container _container">
+                    <div class="china-section__img">
+                        <img src="img/china2.svg" alt="">
+                    </div>
+                    <div class="china-section__translation">
+                        <span>Основание
+
+                        </span>
+                        <span>Jīchǔ</span>
+                    </div>
+                    <div class="china-section__music">
+                        <img src="img/music.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="program">
+                <div class="program__decor">
+                    <picture>
+                        <source media="(max-width:991px )" srcset="img/programBgMobile.svg">
+                        <img src="img/programBg.svg" alt="">
+                    </picture>
+                </div>
+                <div class="program__container _container md">
+                    <div class="program__text">
+                        “Профессора университета учат простым и понятным языком без лингвистических терминов”
+                    </div>
+                    <div class="program__subtext">
+                        Программа обучения создана для взрослых и детей старше 12 лет
+
+                    </div>
+                    <div class="program__title">
+                        Программа обучения по времени
+                    </div>
+                    <ul class="program__list">
+                        <li>
+                            <span>НАПИСАНИЕ</span>
+                            <p>32 часов с преподавателями на курсе + 16 часов на домашние задания
+                            </p>
+                        </li>
+                        <li>
+                            <span>ЧТЕНИЕ</span>
+                            <p>32 часов на курсе + 16 часов на домашние задания
+                            </p>
+                        </li>
+                        <li>
+                            <span>АУДИРОВАНИЕ</span>
+                            <p>32 часов на курсе + 16 часов на домашние задания
+                            </p>
+                        </li>
+                        <li>
+                            <span>ОБЩЕНИЕ</span>
+                            <p>32 часов на курсе + 16 часов на домашние задания
+                            </p>
+                        </li>
+                        <li>
+                            <span>ВОКАЛИЗАЦИЯ</span>
+                            <p>32 часов на курсе + 16 часов на домашние задания
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="situation">
+
+                <div class="situation__container _container md">
+                    <div class="situation__text ">
+                        <b> Учебник </b> и <b> материалы базового курса</b> для учеников предоставляются в <b>
+                            электронном виде </b> с возможностью распечатать, а так же мы пришлем вам <b> 1 экземпляр
+                            книги </b> и <b> учебную тетрадь </b> для китайского языка по указанному вами адресу.
+                    </div>
+                    <div class="situation__title title">
+                        40 тематических ситуаций <span>, которые будут разобраны на курсе</span>
+                    </div>
+                    <div class="situation__row">
+                        <div class="situation__img">
+                            <img src="img/situation.png" alt="">
+                        </div>
+                        <div class="situation__items">
+                            <div class="situation__item situation__item_yellow situation__item_cb">#туризм</div>
+                            <div class="situation__item situation__item_blue situation__item_cw">#еда</div>
+                            <div class="situation__item situation__item_yellow situation__item_cb">#путешествия</div>
+                            <div class="situation__item situation__item_orange situation__item_cw">#покупки</div>
+                            <div class="situation__item situation__item_light-blue_1 situation__item_cw">#оказание
+                                первой помощи</div>
+                            <div class="situation__item situation__item_light-blue_1 situation__item_cb">#переговоры
+                            </div>
+                            <div class="situation__item situation__item_yellow situation__item_cb">#жилье</div>
+                            <div class="situation__item situation__item_yellow situation__item_cb">#бизнес</div>
+                            <div class="situation__item situation__item_orange situation__item_cw"> #медпомощь</div>
+                            <div class="situation__item situation__item_light-blue situation__item_cb">#транспорт</div>
+                            <div class="situation__item situation__item_yellow situation__item_cw">#еда</div>
+
+                            <div class="situation__item situation__item_yellow situation__item_cb">#туризм</div>
+                            <div class="situation__item situation__item_blue situation__item_cw">#еда</div>
+                            <div class="situation__item situation__item_yellow situation__item_cb">#путешествия</div>
+                            <div class="situation__item situation__item_orange situation__item_cw">#покупки</div>
+                            <div class="situation__item situation__item_light-blue_1 situation__item_cw">#оказание
+                                первой помощи</div>
+                            <div class="situation__item situation__item_light-blue_1 situation__item_cb">#переговоры
+                            </div>
+                            <div class="situation__item situation__item_yellow situation__item_cb">#жилье</div>
+                            <div class="situation__item situation__item_yellow situation__item_cb">#бизнес</div>
+                            <div class="situation__item situation__item_orange situation__item_cw"> #медпомощь</div>
+                            <div class="situation__item situation__item_light-blue situation__item_cb">#транспорт</div>
+                            <div class="situation__item situation__item_yellow situation__item_cw">#еда</div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="china-section china-section_3">
+                <div class="china-section__container _container">
+                    <div class="china-section__img">
+                        <img src="img/china3.svg" alt="">
+                    </div>
+                    <div class="china-section__translation">
+                        <span>Методология изучения
+
+                        </span>
+                        <span>Yánjiū fāngfǎ</span>
+                    </div>
+                    <div class="china-section__music">
+                        <img src="img/music.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="how">
+                <div class="how__title md">
+                    Как происходит обучение?
+                </div>
+                <div class="how__container _container md">
+                    <div class="how__item item-how">
+                        <div class="item-how__counter">
+                            <img src="img/howCloud.svg" alt="">
+                        </div>
+                        <div class="item-how__text">
+                            После записи в группу вы получаете доступ к личному кабинету ученика на <b> специально
+                                разработанной платформе для обучения</b>
+                        </div>
+                    </div>
+                    <div class="how__item item-how">
+                        <div class="item-how__counter">
+                            <img src="img/howCloud.svg" alt="">
+                        </div>
+                        <div class="item-how__text">
+                            <b> выбираете график </b> обучения удобный по времени и дням
+                        </div>
+                    </div>
+                    <div class="how__item item-how">
+                        <div class="item-how__counter">
+                            <img src="img/howCloud.svg" alt="">
+                        </div>
+                        <div class="item-how__text">
+                            с помощью платформы подключаетесь к <b> онлайн урокам </b> в выбранное время
+                        </div>
+                    </div>
+                    <div class="how__item item-how">
+                        <div class="item-how__counter">
+                            <img src="img/howCloud.svg" alt="">
+                        </div>
+                        <div class="item-how__text">
+                            на уроках вы <b> обучаетесь </b> и <b> задаете вопросы</b>
+                        </div>
+                    </div>
+                    <div class="how__item item-how">
+                        <div class="item-how__counter">
+                            <img src="img/howCloud.svg" alt="">
+                        </div>
+                        <div class="item-how__text">
+                            после каждого урока вы получаете <b> небольшие домашнее задание,</b> которое нужно выполнить
+                            до начала следующего урока
+                        </div>
+                    </div>
+                    <div class="how__item item-how">
+                        <div class="item-how__counter">
+                            <img src="img/howCloud.svg" alt="">
+                        </div>
+                        <div class="item-how__text">
+                            сканы и фото выполнения домашних заданий вы загружаете для проверки преподавателям
+                            <b> в личном кабинете </b> платформы
+                        </div>
+                    </div>
+                    <div class="how__item item-how">
+                        <div class="item-how__counter">
+                            <img src="img/howCloud.svg" alt="">
+                        </div>
+                        <div class="item-how__text">
+                            За период обучение происходит
+                            <b>4 контрольные работы </b> для проверки усвоения материала. Это важно для
+                            усовершенствования методологии преподавания.
+                        </div>
+                    </div>
+                    <div class="how__item item-how">
+                        <div class="item-how__counter">
+                            <img src="img/howCloud.svg" alt="">
+                        </div>
+                        <div class="item-how__text">
+                            после завершения обучения вы получаете <b> атестат/сертификат/диплом? от Shenzhen
+                                Polytechnic University </b> об изучении
+                            китайского языка
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block text-block_1">
+                <div class="__container _container">
+
+                    <span>
+                        "Сначала это может показаться очень сложным, но именно такая методология позволит вам освоить
+                        базовый китайский язык всего за 2,5 МЕСЯЦА"
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="methodology">
+                <div class="methodology__title">
+                    МЕТОДОЛОГИЯ и языковая пара изучения языка
+                </div>
+                <ul class="methodology__container _container">
+                    <li>
+
+                        <img src="img/because.svg" alt="">
+                        <p>
+                            Методология и все преподавание языка строится на языковой паре <br><span>АНГЛИЙСКИЙ -
+                                КИТАЙСКИЙ</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/because.svg" alt="">
+                        <p>
+                            Создается атмосфера таким образом, чтоб чтоб вы сразу начинали говорить <br> на <span>
+                                КИТАЙСКОМ
+                                ЯЗЫКЕ</span>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img src="img/because.svg" alt="">
+                        <p>
+                            Вы можете задать вопрос на Английском языке и преподаватель поймет вас, но ответит
+                            <span>ИСКЛЮЧИТЕЛЬНО на китайском языке</span> с использованием подручных средств - <br>
+                            <b>картинки,
+                                видео, аудио, рисунков.</b>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/because.svg" alt="">
+                        <p>
+
+                            Если нужно будет - преподаватель будет объяснять вам <span>"на пальцах"</span>, на
+                            китайском, до <br>
+                            тех пор, пока вы не поймете ответ.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="img/because.svg" alt="">
+                        <p>
+
+                            Такая методология используется <b> для <span> лучшего усвоения материала.</span> </b>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="time main-time">
+
+                <div class="time__container _container">
+                    <div class="time__title">
+                        Пора учить китайский язык
+                    </div>
+                    <div class="time__text">
+                        Китайская экономика к 2028 будет №1 в мире. Всего через 6,5 лет мировой экономический центр
+                        сместится в Китай.
+                    </div>
+                </div>
+
+                <div class="china-section china-section_4">
+                    <div class="china-section__container _container">
+                        <div class="china-section__img">
+                            <img src="img/china4.svg" alt="">
+                        </div>
+                        <div class="china-section__translation">
+                            <span>Экономика
+
+                            </span>
+                            <span>Jīngjì</span>
+                        </div>
+                        <div class="china-section__music">
+                            <img src="img/music.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq__container _container">
+                    <div class="faq__title title-mb">
+                        Какие вопросы вы сможете решать с помощью китайского языка после прохождения курса в
+                        университете онлайн?
+                    </div>
+                    <div class="faq__body">
+                        <div class="faq__item">
+                            <div class="faq__item-img">
+                                <img src="img/faq/1.svg" alt="">
+                            </div>
+                            <div class="faq__item-title">
+                                Cможете найти работу
+                            </div>
+                            <div class="faq__item-text">
+                                компании из Китая и всего мира очень заинтересованы в работниках иностранцах знающих
+                                даже базовый китайский язык
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__item-img">
+                                <img src="img/faq/2.svg" alt="">
+                            </div>
+                            <div class="faq__item-title">
+                                Получите поддержку и одобрение китайцев
+                            </div>
+                            <div class="faq__item-text">
+                                зная базовые 1000 слов на китайском языке вы будете почетным гостем в доме у китайца с
+                                которым вы работаете или ведете бизнес
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__item-body">
+
+                                <div class="faq__item-img">
+                                    <img src="img/faq/3.svg" alt="">
+                                </div>
+                                <div class="faq__item-title">
+                                    Cможете вести переговоры
+                                </div>
+                                <div class="faq__item-text">
+                                    наличие даже базового уровня китайского бизнес языка упрощает переговоры, торги и
+                                    дальнейшее сотрудничество
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__item-img">
+                                <img src="img/faq/4.svg" alt="">
+                            </div>
+                            <div class="faq__item-title">
+                                Cможете помогать китайцам инвестировать в Европе
+                            </div>
+                            <div class="faq__item-text">
+                                китайцы имеют огромные капиталы для инвестирования и очень часто инвестируют в
+                                Европейские страны. Зная китайский язык вы сможете получить доверие китайцев, помочь с
+                                инвестициями и получить свою комиссию от сделок
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__item-img">
+                                <img src="img/faq/5.svg" alt="">
+                            </div>
+                            <div class="faq__item-title">
+                                Вам откроются новые возможности для роста и развития в Китае
+                            </div>
+                            <div class="faq__item-text">
+                                зная базовый китайский язык вы сможете обучаться в университетах Китая почти бесплатно,
+                                находить новые контакты и бизнес идеи
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="china-section china-section_5">
+                <div class="china-section__container _container">
+                    <div class="china-section__img">
+                        <img src="img/china5.svg" alt="">
+                    </div>
+                    <div class="china-section__translation">
+                        <span>Мудрость
+
+                        </span>
+                        <span>Zhìhuì fúhào</span>
+                    </div>
+                    <div class="china-section__music">
+                        <img src="img/music.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="teacher">
+                <div class="teacher__title">
+                    Кто преподает базовый курс по китайскому языку?
+
+                </div>
+                <div class="teacher__container _container">
+                    <div class="teacher__item">
+                        <div class="teacher__item-img">
+                            <img src="img/teacher1.jpg" alt="">
+                        </div>
+                        <div class="teacher__item-name">
+                            Professor LIU Hogfan
+                        </div>
+                        <div class="teacher__item-position">
+                            Должность
+                        </div>
+                        <div class="teacher__item-regalii">
+                            Регалии
+                        </div>
+                    </div>
+                    <div class="teacher__item">
+                        <div class="teacher__item-img">
+                            <img src="img/teacher2.jpg" alt="">
+                        </div>
+                        <div class="teacher__item-name">
+                            Professor Wang Jie
+
+                        </div>
+                        <div class="teacher__item-position">
+                            Должность
+                        </div>
+                        <div class="teacher__item-regalii">
+                            Регалии
+                        </div>
+                    </div>
+                    <div class="teacher__item">
+                        <div class="teacher__item-img">
+                            <img src="img/teacher3.jpg" alt="">
+                        </div>
+                        <div class="teacher__item-name">
+                            Professor LIU Hogfan
+                        </div>
+                        <div class="teacher__item-position">
+                            Должность
+                        </div>
+                        <div class="teacher__item-regalii">
+                            Регалии
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include('_footer.html',{})
+        </div>
+        @@include('_popup.html',{})
+        @@include('_js.html',{})
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html,
+body {
+	min-height: 100%;
+	min-width: $minWidth;
+}
+body {
+	font-size: #{$fontSize + px};
+	line-height: 1.57;
+	font-family: $fontFamily;
+	//text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+//-webkit-overflow-scrolling: touch;
+//animation-play-state: paused !important;
+
+select,
+input,
+textarea,
+button {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	display: inline-block;
+	color: inherit;
+	line-height: inherit;
+	cursor: pointer;
+	letter-spacing: inherit;
+}
+
+picture,
+img,
+svg {
+	display: inline-block;
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+input,
+select {
+	padding: 0 10px;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: url(../img/icons/select.svg);
+	background-size: 13px 9px;
+	background-position: right 5px top 50%;
+	background-repeat: no-repeat;
+}
+
+polyline,
+path {
+	fill: inherit;
+	stroke: inherit;
+}
+
+textarea {
+	display: block;
+}

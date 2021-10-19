@@ -21,21 +21,22 @@ async function form_submit(e) {
 			e.preventDefault();
 			let formData = new FormData(form);
 			form.classList.add('_sending');
+			console.log(formAction);
 			let response = await fetch(formAction, {
 				method: formMethod,
 				body: formData
 			});
-			if (response.ok) {
-				let result = await response.json();
-				form.classList.remove('_sending');
-				if (message) {
-					popup_open(message + '-message');
-				}
-				form_clean(form);
-			} else {
-				alert("Ошибка");
-				form.classList.remove('_sending');
-			}
+			let result = await response.json();
+			form.classList.remove('_sending');
+			// if (message) {
+				console.log(message);
+			popup_open(message);
+			// }
+			form_clean(form);
+			// } else {
+			// alert("Ошибка");
+			// form.classList.remove('_sending');
+			// }
 		}
 		// If test
 		if (form.hasAttribute('data-test')) {

@@ -1,0 +1,155 @@
+footer {
+}
+//====================================================================================================
+
+//====================================================================================================
+
+.footer {
+    font-size: 14px;
+    padding: 30px 0;
+    background-color: #faf9f9;
+    // .footer__container
+
+    &__container {
+    }
+
+    // .footer__top
+
+    &__top {
+    }
+
+    // .footer__logo
+
+    &__logo {
+        margin-bottom: 15px;
+        width: 235px;
+    }
+
+    // .footer__social
+
+    &__social {
+    }
+
+    // .footer__title
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    // .footer__nav
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .footer__loc
+
+    &__loc {
+        line-height: 1.2;
+        margin-bottom: 11px;
+    }
+
+    // .footer__phone
+
+    &__phone {
+        font-weight: 700;
+    }
+
+    // .footer__bottom
+
+    &__bottom {
+    }
+
+    // .footer__copy
+
+    &__copy {
+        color: #989797;
+        font-size: 12px;
+        a {
+            text-decoration: underline;
+            color: $accentColor;
+        }
+        @media (max-width:$md2+px){
+            margin-bottom: 15px;
+        }
+    }
+
+    // .footer__email
+
+    &__email {
+        color: $accentColor;
+        font-weight: 700;
+    }
+}
+.footer-top {
+    display: flex;
+    margin-bottom: 30px;
+    @media (max-width: $md2+px) {
+        flex-direction: column;
+    }
+}
+.footer-col {
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width:$md2+px){
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+    // .footer-col__1
+
+    &__1 {
+        @media (min-width:$md2+px){
+            margin-right: auto;
+        }
+    }
+
+    // .footer-col__2
+
+    &__2 {
+    }
+
+    // .footer-col__3
+
+    &__3 {
+        @media (min-width:$md2+px){
+            margin-left: 40px;
+            margin-right: auto;
+            
+        }
+    }
+
+    // .footer-col__4
+
+    &__4 {
+        @media (min-width:$md2+px){
+
+        margin-right: 28px;
+        }
+    }
+}
+.footer-social {
+    a:not(:last-child) {
+        margin-right: 20px;
+    }
+    a {
+        opacity: 0.22;
+        transition: opacity 0.3s ease;
+        img {
+            width: 40px;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$md2+px){
+        flex-direction: column;
+    }
+}

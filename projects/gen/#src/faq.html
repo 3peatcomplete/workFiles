@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Вопросы и ответы"
+})
+
+<body>
+    @@include('_sprite.html',{})
+    <div class="wrapper">
+        @@include('_header.html',{})
+        <div class="page faq">
+            <ul class="crumb _container">
+                <li><a href="/" class="crumb__link">Главная </a></li>
+                <li><a href="#" class="crumb__link _active">Вопросы и ответы </a></li>
+            </ul>
+
+            <div class="faqBlk">
+                <div class="faqBlk__container _container">
+                    <div class="projects__title title">
+                        <h2 class="title__text">
+                            Вопросы и ответы
+                        </h2>
+
+                    </div>
+                    <div class="faqBlk__spoller faqBlk-spoller _spoller" data-spollers data-one-spoller>
+                        <div class="faqBlk-spoller__item">
+
+                            <button class="_spoller-title" data-spoller>
+                                Что такое абсолютный риск заболевания?
+                                <svg class="icon" viewBox="0 0 13 7">
+                                    <use xlink:href="#svg-faqDown"></use>
+                                </svg>
+                            </button>
+                            <div class="_spoller-content">
+                                Основана 3 февраля 2008 года Учредители Благотворительный Фонд <b>Благотворительный
+                                    Фонд</b>
+                                «Ассоциация «АНГЕЛ» «Ассоциация «АНГЕЛ» (редкие генетические заболевания) (редкие
+                                генетические заболевания) Некоммерческое учреждение Некоммерческое учреждение «
+                                Северо-Западное общество « Северо-Западное общество больных редкими заболеваниями»
+                                больных
+                                редкими заболеваниями»
+                            </div>
+                        </div>
+                        <div class="faqBlk-spoller__item">
+
+                            <button class="_spoller-title" data-spoller>
+                                Что такое абсолютный риск заболевания?
+                                <svg class="icon" viewBox="0 0 13 7">
+                                    <use xlink:href="#svg-faqDown"></use>
+                                </svg>
+                            </button>
+                            <div class="_spoller-content">
+                                Основана 3 февраля 2008 года Учредители Благотворительный Фонд <b>Благотворительный
+                                    Фонд</b>
+                                «Ассоциация «АНГЕЛ» «Ассоциация «АНГЕЛ» (редкие генетические заболевания) (редкие
+                                генетические заболевания) Некоммерческое учреждение Некоммерческое учреждение «
+                                Северо-Западное общество « Северо-Западное общество больных редкими заболеваниями»
+                                больных
+                                редкими заболеваниями»
+                            </div>
+                        </div>
+                        <div class="faqBlk-spoller__item">
+
+                            <button class="_spoller-title" data-spoller>
+                                Что такое абсолютный риск заболевания?
+                                <svg class="icon" viewBox="0 0 13 7">
+                                    <use xlink:href="#svg-faqDown"></use>
+                                </svg>
+                            </button>
+                            <div class="_spoller-content">
+                                Основана 3 февраля 2008 года Учредители Благотворительный Фонд <b>Благотворительный
+                                    Фонд</b>
+                                «Ассоциация «АНГЕЛ» «Ассоциация «АНГЕЛ» (редкие генетические заболевания) (редкие
+                                генетические заболевания) Некоммерческое учреждение Некоммерческое учреждение «
+                                Северо-Западное общество « Северо-Западное общество больных редкими заболеваниями»
+                                больных
+                                редкими заболеваниями»
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+            <form class="formBlk mb-formBlk" action="send.php" method="post" data-ajax="1" data-message="thanks">
+                <div class="formBlk__container _container">
+                    <div class="formBlk__body section_blue">
+                        <div class="formBlk__title title">
+                            <h2 class="title__text">
+                                Остались вопросы?
+                            </h2>
+    
+                        </div>
+                        <div class="formBlk__text">
+                            Напишите свой вопрос и мы с удовольствием на него ответим
+                        </div>
+
+                        <div class="formBlk__row">
+                            <label class="formBlk__input">
+                                <span>Представьтесь, пожалуйста*</span>
+                                <input class="_req" type="text" name="name"  placeholder="Ваше имя">
+                            </label>
+                            <label class="formBlk__input">
+                                <span>Ваш телефон</span>
+                                <input class="_req" data-mask="+7 (999) 999-99-99" type="tel" name="phone" 
+                                    placeholder="+7 (___) ___-__-__">
+                            </label>
+                            <label class="formBlk__input">
+                                <span>Ваша почта*</span>
+                                <input class="_req" type="text" name="email"  placeholder="mail@mail.ru">
+                            </label>
+                        </div>
+                        <label class="formBlk__input formBlk__input-textarear">
+                            <span>Ваш вопрос*</span>
+                            <textarea class="_req" type="text" name="quest"  placeholder="Заполните поле"></textarea>
+                        </label>
+
+                        <div class="formBlk__pol pol">
+                            <div class="pol__chk">
+                                <div class="custom-checkbox">
+                                    <input class="custom-checkbox__input _req " name="checkbox" checked type="checkbox">
+                                    <div class="custom-checkbox__body">
+                                    </div>
+                                </div>
+                                <div class="pol__text">
+                                    Я соглашаюсь с <a href="#">политикой конфиденциальности</a>
+                                </div>
+                            </div>
+                            <button class="pol__btn">задать вопрос</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        @@include('_contactsBlk.html',{})
+
+        @@include('_footer.html',{})
+
+    </div>
+    @@include('_popup.html',{})
+    @@include('_js.html',{})
+</body>
+
+</html>

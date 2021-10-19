@@ -1,0 +1,58 @@
+.transportation {
+
+    // .transportation__container
+
+    &__container {
+    }
+
+    // .transportation__title
+
+    &__title {
+    }
+
+    // .transportation__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr  467px;
+        gap: 20px;
+        @media (max-width:$md2+px){
+        grid-template-columns: 1fr  ;
+            
+        }
+    }
+
+    // .transportation__content
+
+    &__content {
+        font-size: 16px; 
+        line-height: 24px;
+        p:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    // .transportation__decor
+
+    &__decor {
+        padding-left: 30px;
+        position: relative;
+        
+        &::after{
+            content:'';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 9px;
+            height: 90%;
+            background-color: $accentColor;
+            
+        }
+    }
+
+    // .transportation__img
+
+    &__img {
+    }
+}

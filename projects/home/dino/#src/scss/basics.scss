@@ -1,0 +1,136 @@
+.basics {
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 2;
+    @media (max-width:$md2+px){
+        margin-bottom: 80px;
+    }
+    // .basics__container
+
+    &__container {
+    }
+
+    // .basics__title
+
+    &__title {
+        font-weight: bold;
+        font-size: 48px;
+        color: $orangeColor;
+        margin-bottom: 30px;
+        text-align: center;
+        @media (max-width: $md2+px) {
+            font-size: 24px;
+            max-width: 220px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+
+    // .basics__subtitle
+
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 40px;
+        @media (max-width: $md2+px) {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+
+    // .basics__row
+
+    &__row {
+        display: flex;
+        gap: 75px;
+        align-items: flex-end;
+        @media (max-width: $md2+px) {
+            flex-direction: column;
+            gap:30px;
+            align-items: center;
+        }
+    }
+
+    // .basics__col
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        @media (max-width:$md2+px){
+            align-items: center;
+            gap: 20px   ;
+        }
+    }
+
+    // .basics__item
+
+    &__item {
+        
+    }
+
+    // .basics__image
+
+    &__image {
+        @media (max-width:$md2+px){
+            img{
+                max-width: 150px;
+
+            }
+
+        }
+    }
+}
+.basics-left {
+    text-align: center;
+
+    @media (min-width: $md2+px) {
+        .item-basics {
+            text-align: right;
+            &:nth-child(2) {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+.item-basics {
+    // .item-basics__title
+
+    &__title {
+        font-weight: bold;
+        color: $orangeColor;
+        margin-bottom: 20px;
+        @media (max-width:$md2+px){
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    }
+
+    // .item-basics__text
+
+    &__text {
+        @media (max-width:$md2+px){
+            font-size: 14px;
+        }
+    }
+}
+.basics-center {
+    gap: 44px;
+    text-align: center;
+    @media (max-width:$md2+px){
+        order: -1;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
+.basics-right {
+    text-align: center;
+    @media (min-width: $md2+px) {
+        .item-basics {
+            text-align: left;
+            &:nth-child(2) {
+                margin-left: 40px;
+            }
+        }
+    }
+  
+}

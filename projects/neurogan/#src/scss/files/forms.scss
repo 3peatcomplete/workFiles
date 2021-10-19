@@ -1,0 +1,146 @@
+
+
+
+
+input:not([type="checkbox"]):not([type="radio"]) ,select  {
+	width: 100%;
+}
+
+
+.custom-checkbox {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background-color: $c_f;
+	&__input {
+		position: absolute;
+		opacity: 0;
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		&:checked ~ .custom-checkbox__body {
+			background-image: url(../img/icons/check.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		&:focus ~ .custom-checkbox__body {
+			border-color:  $c_0;
+		}
+	}
+	&__body {
+		border: 2px solid #a6a6a6;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+.custom-radio {
+	position: relative;
+	width: 20px;
+	height: 20px;
+
+	&__input {
+		position: absolute;
+		opacity: 0;
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		&:checked ~ .custom-radio__body::before {
+			background-color: $c_0;
+		}
+		&:focus ~ .custom-radio__body {
+			border-color: $c_0;
+		}
+	}
+	&__body {
+		background-color: $c_f;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		border: 2px solid #a6a6a6;
+		top: 0;
+		left: 0;
+		transition: all .3s ease;
+		&::before {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transition: all .3s ease;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			content: "";
+		}
+	}
+}
+
+
+input._error , .custom-radio._error .custom-radio__body , .custom-checkbox._error .custom-checkbox__body, select._error {
+	border: 1px solid red;
+	border: 1px solid red;
+    box-shadow: red 0px 0px 7px -2px;
+}
+
+//<QUANTITY>===================================================================================================
+.quantity {
+	width: 100px;
+	height: 40px;
+	display: flex;
+	border: 1px solid rgba(166, 166, 166, 0.45);
+	// .quantity__button
+	&__button {
+		flex: 0 0 30px;
+		position: relative;
+		cursor: pointer;
+		background-color: $c_f;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transition: all 0.3s ease 0s;
+			margin: 0px 0px 0px -4.5px;
+			background-color: #a6a6a6;
+			width: 9px;
+			height: 1px;
+		}
+		@media (min-width: $md2+px) {
+			&:hover {
+				&::before,
+				&::after {
+					background-color: rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+		// .quantity__button_plus
+		&_plus {
+			&::before {
+				transform: rotate(-90deg);
+			}
+		}
+		// .quantity__button_minus
+		&_minus {
+		}
+	}
+	// .quantity__input
+	&__input {
+		flex: 1 1 auto;
+		input {
+			height: 100%;
+			color: #a6a6a6;
+			font-size: 12px;
+			width: 100%;
+			text-align: center;
+			padding: 0;
+			background-color: $c_f;
+			cursor: default;
+		}
+	}
+}
+//</QUANTITY>====================================================================================================

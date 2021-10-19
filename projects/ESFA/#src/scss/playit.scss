@@ -1,0 +1,69 @@
+.playit {
+    padding-top: 93px;
+    padding-bottom: 70px;
+    background-image: url(../img/playit/bg.jpg);
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #03171D;
+        opacity: .9;
+    }
+    // .playit__container
+
+    &__container {
+        position: relative;
+        z-index: 5;
+    }
+
+    // .playit__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .playit__img
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    // .playit__title
+
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 50px;
+        text-align: center;
+        color: $c_f;
+        span{
+            color: $c_main;
+        }
+    }
+
+    // .playit__text
+
+    &__text {
+        color: $c_2e;
+        margin-bottom: 70px;
+        font-size: 20px;
+    }
+
+    // .playit__btn
+
+    &__btn {
+    }
+}
+.btn {
+}
+.btn-m {
+}
+.btn-mc {
+}

@@ -1,0 +1,67 @@
+.s404 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/404.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 220px);
+
+    @media (max-width:$md2+px){
+        background-size:auto 50% ;
+        min-height: calc(100vh - 50px);
+
+    }
+    // .s404__container
+
+    &__container {
+        max-width: 690px;
+        text-align: center;
+    }
+
+    // .s404__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 50px;
+        margin-bottom: 14px;
+    }
+
+    // .s404__text
+
+    &__text {
+        font-size: 20px;
+        line-height: 50px;
+        /* identical to box height, or 250% */
+
+        color: #000000;
+        margin-bottom: 27px;
+    }
+
+    // .s404__btns
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+    }
+
+    // .s404__btn
+
+    &__btn {
+        &:nth-child(1){
+            max-width: 210px;
+            margin-right: 20px;
+        }
+        &:nth-child(2){
+
+        }
+    }
+}
+.btn {
+    // .btn_dflt
+
+    &_dflt {
+    }
+}

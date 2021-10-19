@@ -1,0 +1,223 @@
+.china-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    // .china-section_1
+
+    &_1 {
+        background-image: url(../img/china-sectionBg1.svg);
+        min-height: 277px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 80px;
+        @media (max-width: $md2+px) {
+            background-image: url(../img/china-sectionBg1Mobile.svg);
+            min-height: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    &_2 {
+        margin-bottom: 60px;
+        @media (max-width: $md2+px) {
+            margin-bottom: 80px;
+            padding-top: 40px;
+            .china-section__container{
+                justify-content: space-around;
+            }
+        }
+    }
+    &_3 {
+        margin-bottom: 80px;
+        background-image: url(../img/china3Bg.svg);
+        background-size: 100% 100%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        @media (max-width: $md2+px) {
+            background-image: url(../img/china3BgMobile.svg);
+            background-size: 100% auto;
+            .china-section__container {
+                flex-direction: column;
+            }
+        }
+    }
+    &_4 {
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+    &_5 {
+        margin-bottom: 80px;
+        background-image: url(../img/china4Bg.svg);
+        background-size: 100% 100%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        @media (max-width:$md2+px){
+            background-image: url(../img/time-mainMobile.svg);
+            
+        }
+    }
+    // .china-section__container
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // .china-section__img
+
+    &__img {
+        margin-right: 36px;
+        // @media (max-width:$md2+px){
+        //     margin-right: 15px;
+        //     img{
+
+        //         max-width: 134px;
+        //     }
+        // }
+    }
+
+    // .china-section__translation
+
+    &__translation {
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #356f7c;
+        span {
+            display: block;
+        }
+        @media (max-width: $md2+px) {
+            font-size: 14px;
+            margin-right: 15px;
+        }
+    }
+
+    // .china-section__music
+
+    &__music {
+        margin-left: 50px;
+        @media (max-width: $md2+px) {
+            margin-left: 0;
+            img {
+                max-width: 40px;
+            }
+        }
+    }
+}
+
+.china-section_1 {
+    .china-section__img {
+        margin-right: 36px;
+        @media (max-width: $md2+px) {
+            margin-right: 15px;
+            img {
+                max-width: 134px;
+            }
+        }
+    }
+    @media (max-width:$md2+px){
+        .china-section__translation{
+            line-height: 1.4;
+
+        }
+    }
+}
+
+.china-section_2 {
+    .china-section__img {
+        margin-right: 36px;
+        @media (max-width: $md2+px) {
+            margin-right: 15px;
+            img {
+                max-width: 72px;
+            }
+        }
+    }
+    @media (max-width:$md2+px){
+        .china-section__translation{
+            line-height: 1.4;
+
+        }
+    }
+}
+.china-section_3 {
+    @media (max-width: $md2+px) {
+        padding-top: 85px;
+        .china-section__container {
+            flex-direction: column;
+        }
+    }
+    .china-section__img {
+        @media (max-width: $md2+px) {
+            margin-right: 0px;
+            margin-bottom: 15px;
+            img {
+                max-width: 256px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .china-section__translation {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .china-section__music {
+        @media (max-width: $md2+px) {
+            margin-left: 0;
+            img {
+                max-width: 50px;
+            }
+        }
+    }
+}
+
+.china-section_4 {
+    @media (max-width: $md2+px) {
+        margin-bottom: 0;
+        margin-top: 40px;
+        .china-section__img {
+            margin-right: 10px;
+            img {
+                max-width: 100px;
+            }
+        }
+        .china-section__translation {
+            font-size: 18px;
+        }
+    }
+}
+
+.china-section_5 {
+    @media (max-width: $md2+px) {
+        padding-top: 85px;
+        .china-section__container {
+            flex-direction: column;
+        }
+    }
+    .china-section__img {
+        @media (max-width: $md2+px) {
+            margin-right: 0px;
+            margin-bottom: 20px;
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .china-section__translation {
+        font-size: 24px;
+        margin-bottom: 20px;
+        
+    }
+    .china-section__music {
+        @media (max-width: $md2+px) {
+            margin-left: 0;
+            img {
+                max-width: 50px;
+            }
+        }
+    }
+}

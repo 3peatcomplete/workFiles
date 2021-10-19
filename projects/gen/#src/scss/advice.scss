@@ -1,0 +1,74 @@
+.advice {
+    // .advice__container
+
+    &__container {
+    }
+
+    // .advice__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 21px;
+        @media (max-width:$md2+px){
+            grid-template-columns: repeat(2, 1fr );
+        }
+        @media (max-width:$md4+px){
+            grid-template-columns: 1fr;
+              
+        }
+    }
+
+    // .advice__item
+
+    &__item {
+    }
+}
+.advice-item {
+    border: 1px solid #b1b8c7;
+    background-color: $c_f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 45px 0;
+    // .advice-item__img
+
+    &__img {
+        margin-bottom: 13px;
+    }
+
+    // .advice-item__position
+
+    &__position {
+        font-size: 12px;
+        line-height: 17px;
+        /* identical to box height, or 142% */
+
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    // .advice-item__name
+
+    &__name {
+        max-width: 190px;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 600;
+        text-align: center;margin-bottom: 24px;
+    }
+
+    // .advice-item__tel
+
+    &__tel {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        /* identical to box height, or 156% */
+
+        text-align: center;
+
+        color: #313844;
+    }
+}

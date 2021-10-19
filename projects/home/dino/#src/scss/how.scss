@@ -1,0 +1,122 @@
+.how {
+    padding-bottom: 240px;
+    @media (max-width:$md2+px){
+        padding-bottom: 30px;
+    }
+    // .how__title
+
+    &__title {
+        margin-bottom: 70px;
+        text-align: center;
+        color: $orangeColor;
+        font-weight: bold;
+        font-size: 48px;
+        @media (max-width: $md2+px) {
+            font-size: 24px;
+            text-align: left;
+            max-width: 200px;
+            padding-left: 10px;
+        }
+    }
+
+    // .how__container
+
+    &__container {
+        display: flex;
+        background-image: url(../img/howLine.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        flex-wrap: wrap;
+        counter-reset: list -0;
+        align-items: center;
+        gap: 160px 40px;
+        justify-content: center;
+        @media (max-width: $md2+px) {
+            background-position: left 10px top;
+            background-size: 30px 100%;
+            padding-left: 50px;
+            gap: 30px;
+        }
+    }
+
+    // .how__item
+
+    &__item {
+        flex: 0 1 560px;
+        @media (max-width: $md2+px) {
+            flex: auto;
+        }
+    }
+}
+.item-how {
+    &:nth-child(1) {
+        margin-top: 0;
+    }
+    margin-top: 120px;
+    @media (max-width:$md2+px){
+        margin-top: 0;
+    }
+    // .item-how__counter
+
+    &__counter {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin-bottom: 20px;
+        &:before {
+            font-size: 72px;
+
+            color: $orangeColor;
+
+            counter-increment: list;
+            content: counter(list);
+        @media (max-width: $md2+px) {
+            font-size: 48px !important;
+        }
+        }
+        @media (max-width: $md2+px) {
+            margin-bottom: 10px;
+            flex-direction: row !important;
+            justify-content: flex-start;
+            img{
+                width: 45px;
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        transform: translateY(160px);
+        @media (max-width: $md2+px) {
+            transform: translateY(0);
+        }
+    }
+    &:nth-child(3) {
+        .item-how__counter {
+            flex-direction: row;
+        }
+    }
+    &:nth-child(4) {
+        .item-how__counter {
+            flex-direction: row;
+        }
+    }
+    &:nth-child(7) {
+        .item-how__counter {
+            flex-direction: row;
+        }
+    }
+    &:nth-child(8) {
+        .item-how__counter {
+            flex-direction: row;
+        }
+    }
+
+    // .item-how__text
+
+    &__text {
+        @media (max-width:$md2+px){
+            font-size: 16px;
+        }
+    }
+}

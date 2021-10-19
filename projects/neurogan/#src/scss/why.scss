@@ -1,0 +1,117 @@
+.why {
+    margin-bottom: 55px;
+    // .why__content
+
+    &__content {
+    }
+
+    // .why__title
+
+    &__title {
+    }
+
+    &__bg {
+        background-image: url(../img/why/why_bg.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    // .why__inner
+
+    &__inner {
+        padding: 25px 10px 81px 10px;
+    }
+
+    // .why__top
+
+    &__top {
+    }
+
+    // .why__body
+
+    &__body {
+        border: 3px solid #2f354c;
+        padding: 50px;
+        border-bottom: 0;
+        max-width: 1180px;
+        margin: 0 auto;
+        @media (max-width: $md2+px) {
+            padding: 20px;
+            border-bottom: 3px solid #2f354c;
+        }
+    }
+
+    // .why__text
+
+    &__text {
+        margin-bottom: 40px;
+        p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .why__img
+
+    &__img {
+        margin: 0 -80px 40px;
+    }
+
+    // .why__botom
+
+    &__botom {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 700;
+        margin: -7% -53px 0;
+        transform: translateY(calc(50% + 50px));
+        display: flex;
+        align-items: center;
+        color: #2f354c;
+        span {
+            max-width: 856px;
+        }
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            height: 3px;
+            background-color: #2f354c;
+            flex: 1 1 auto;
+        }
+        @media (max-width: $md2+px) {
+            margin: 0 auto;
+            &::before,
+            &::after {
+                content: none;
+            }
+            transform: translateY(0);
+        }
+    }
+}
+.title {
+}
+.why-top {
+    margin-left: -35px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    @media (max-width: $md2+px) {
+        margin-left: 0;
+        flex-direction: column;
+    }
+    // .why-top__logo
+
+    &__logo {
+        flex: 0 0 auto;
+        margin-right: 35px;
+        @media (max-width:$md2+px){
+        margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    // .why-top__text
+
+    &__text {
+    }
+}

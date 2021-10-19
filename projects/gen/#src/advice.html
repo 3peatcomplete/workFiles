@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Совет"
+})
+
+<body>
+    @@include('_sprite.html',{})
+    <div class="wrapper">
+        @@include('_header.html',{})
+        <div class="page">
+            <ul class="crumb _container">
+                <li><a href="/" class="crumb__link">Главная </a></li>
+                <li><a href="#" class="crumb__link _active">Совет</a></li>
+            </ul>
+            <div class="msmedia__title title _container">
+                <h2 class="title__text">
+                    Совет
+                </h2>
+            </div>
+            <div class="filter _container">
+                <a href="#" class="filter__item btn_dflt">
+                    попечительский совет
+                </a>
+                <a href="#" class="filter__item btn_dflt">
+                    Экспертный совет 
+                </a>
+            </div>
+            <div class="advice">
+                <div class="advice__container _container">
+                    <div class="advice__body">
+                        <div class="advice__item advice-item">
+                            <div class="advice-item__img">
+                                <img src="img/advice/1.png" alt="">
+                            </div>
+                            <div class="advice-item__position">
+                                Должность
+                            </div>
+                            <div class="advice-item__name">
+                                Егорова <br>
+                                Татьяна Геннадиевна
+                            </div>
+                            <a href="tel:79650574077" class="advice-item__tel">
+                                +7(965) 057 40 77
+                            </a>
+                        </div>
+                        <div class="advice__item advice-item">
+                            <div class="advice-item__img">
+                                <img src="img/advice/2.png" alt="">
+                            </div>
+                            <div class="advice-item__position">
+                                Должность
+                            </div>
+                            <div class="advice-item__name">
+                                Съедина  <br>
+                                Елена Викторовна
+                            </div>
+                            <a href="tel:79650574077" class="advice-item__tel">
+                                +7(965) 057 40 77
+
+                            </a>
+                        </div>
+                        <div class="advice__item advice-item">
+                            <div class="advice-item__img">
+                                <img src="img/advice/3.png" alt="">
+                            </div>
+                            <div class="advice-item__position">
+                                Должность
+                            </div>
+                            <div class="advice-item__name">
+                                Степаненко <br>
+                                Денис Викторович
+                            </div>
+                            <a href="tel:79650574077" class="advice-item__tel">
+                                +7(965) 057 40 77
+                            </a>
+                        </div>
+                        <div class="advice__item advice-item">
+                            <div class="advice-item__img">
+                                <img src="img/advice/4.png" alt="">
+                            </div>
+                            <div class="advice-item__position">
+                                Должность
+                            </div>
+                            <div class="advice-item__name">
+                                Купесок <br>
+                                Ольга Викторовна
+                            </div>
+                            <a href="tel:79650574077" class="advice-item__tel">
+                                +7(965) 057 40 77
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        @@include('_contactsBlk.html',{})
+        @@include('_footer.html',{})
+    </div>
+    @@include('_popup.html',{})
+    @@include('_js.html',{})
+</body>
+
+</html>

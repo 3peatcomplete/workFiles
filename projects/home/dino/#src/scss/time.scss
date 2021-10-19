@@ -1,0 +1,51 @@
+.time {
+    margin-bottom: 80px;
+
+    // .time__container
+
+    &__container {
+    }
+
+    // .time__title
+
+    &__title {
+        font-weight: bold;
+        font-size: 64px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: $orangeColor;
+        @media (max-width: $md2+px) {
+            font-size: 24px;
+            max-width: 342px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    // .time__text
+
+    &__text {
+        font-size: 36px;
+        text-align: center;
+        @media (max-width: $md2+px) {
+            font-size: 14px;
+            text-align: center;
+            padding: 0 10px;
+        }
+    }
+}
+.second-time {
+    min-height: 322px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    background-image: url(../img/time.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    @media (max-width: $md2+px) {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 190px;
+        background-image:  url(../img/timeMobile.svg);
+    }
+}

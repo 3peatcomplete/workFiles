@@ -1,0 +1,28 @@
+.inst {
+    margin-bottom: 40px;
+    // .inst__container
+
+    &__container {
+    }
+
+    // .inst__body
+
+    &__body {
+        display: grid;
+        gap: 33px;
+        grid-template-columns: repeat(4, 1fr);
+        @media (max-width:$md2+px){
+            grid-template-columns: repeat(2, 1fr );
+            gap: 10px;
+        }
+    }
+
+    // .inst__item
+
+    &__item {
+    }
+}
+.inst-item {
+    display: flex;
+    justify-content: center;
+}

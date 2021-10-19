@@ -1,0 +1,255 @@
+//let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
+
+let inputs = document.querySelectorAll('input[data-value],textarea[data-value]');
+
+let forms = document.querySelectorAll('form');
+if (forms.length > 0) {
+	for (let index = 0; index < forms.length; index++) {
+		const el = forms[index];
+		el.addEventListener('submit', form_submit);
+	}
+}
+async function form_submit(e) {
+	let btn = e.target;
+	let form = btn.closest('form');
+	let error = form_validate(form);
+	if (error == 0) {
+		let formAction = form.getAttribute('action') ? form.getAttribute('action').trim() : '#';
+		let formMethod = form.getAttribute('method') ? form.getAttribute('method').trim() : 'GET';
+		const message = form.getAttribute('data-message');
+		const ajax = form.getAttribute('data-ajax');
+
+		//SendForm
+		if (ajax) {
+			e.preventDefault();
+			let formData = new FormData(form);
+			form.classList.add('_sending');
+			let response = await fetch(formAction, {
+				method: formMethod,
+				body: formData
+			});
+			// if (response.ok) {
+			// let result = await response.json();
+			form.classList.remove('_sending');
+			if (message) {
+				popup_open(message + '-message');
+				form.reset();
+				form.classList.remove('_sending');
+			}
+			// }
+		}
+		// If test
+		if (form.hasAttribute('data-test')) {
+			e.preventDefault();
+			popup_open(message + '-message');
+			form_clean(form);
+		}
+	} else {
+		let form_error = form.querySelectorAll('._error');
+		if (form_error && form.classList.contains('_goto-error')) {
+			_goto(form_error[0], 1000, 50);
+		}
+		e.preventDefault();
+	}
+}
+function form_validate(form) {
+	let error = 0;
+	let form_req = form.querySelectorAll('._req');
+	if (form_req.length > 0) {
+		for (let index = 0; index < form_req.length; index++) {
+			const el = form_req[index];
+			if (!_is_hidden(el)) {
+				error += form_validate_input(el);
+			}
+		}
+	}
+	return error;
+}
+function form_validate_input(input) {
+	let error = 0;
+	let input_g_value = input.getAttribute('data-value');
+
+	if (input.getAttribute("name") == "email" || input.classList.contains("_email")) {
+		if (input.value != input_g_value) {
+			let em = input.value.replace(" ", "");
+			input.value = em;
+		}
+		if (email_test(input) || input.value == input_g_value) {
+			form_add_error(input);
+			error++;
+		} else {
+			form_remove_error(input);
+		}
+	} else if (input.getAttribute("type") == "checkbox" && input.checked == false) {
+		form_add_error(input);
+		error++;
+	} else {
+		if (input.value == '' || input.value == input_g_value) {
+			form_add_error(input);
+			error++;
+		} else {
+			form_remove_error(input);
+		}
+	}
+	return error;
+}
+function form_add_error(input) {
+	input.classList.add('_error');
+	input.parentElement.classList.add('_error');
+
+	let input_error = input.parentElement.querySelector('.form__error');
+	if (input_error) {
+		input.parentElement.removeChild(input_error);
+	}
+	let input_error_text = input.getAttribute('data-error');
+	if (input_error_text && input_error_text != '') {
+		input.parentElement.insertAdjacentHTML('beforeend', '<div class="form__error">' + input_error_text + '</div>');
+	}
+}
+function form_remove_error(input) {
+	input.classList.remove('_error');
+	input.parentElement.classList.remove('_error');
+
+	let input_error = input.parentElement.querySelector('.form__error');
+	if (input_error) {
+		input.parentElement.removeChild(input_error);
+	}
+}
+
+
+let viewPass = document.querySelectorAll('.form__viewpass');
+for (let index = 0; index < viewPass.length; index++) {
+	const element = viewPass[index];
+	element.addEventListener("click", function (e) {
+		if (element.classList.contains('_active')) {
+			element.parentElement.querySelector('input').setAttribute("type", "password");
+		} else {
+			element.parentElement.querySelector('input').setAttribute("type", "text");
+		}
+		element.classList.toggle('_active');
+	});
+}
+
+
+//QUANTITY
+let quantityButtons = document.querySelectorAll('.quantity__button');
+if (quantityButtons.length > 0) {
+	for (let index = 0; index < quantityButtons.length; index++) {
+		const quantityButton = quantityButtons[index];
+		quantityButton.addEventListener("click", function (e) {
+			let value = parseInt(quantityButton.closest('.quantity').querySelector('input').value);
+			if (quantityButton.classList.contains('quantity__button_plus')) {
+				value++;
+			} else {
+				value = value - 1;
+				if (value < 1) {
+					value = 1
+				}
+			}
+			quantityButton.closest('.quantity').querySelector('input').value = value;
+		});
+	}
+}
+
+//RANGE
+// const priceSliders = document.querySelectorAll('.range');
+// if (priceSliders.length > 0) {
+
+
+// 	const rangeFirst = document.getElementById('price-start');
+// 	const rangeSecond = document.getElementById('price-end');
+// 	rangeFirst.addEventListener('change', setPriceValues);
+// 	rangeSecond.addEventListener('change', setPriceValues);
+
+
+// 	function setPriceValues() {
+// 		let rangeFirstValue;
+// 		let rangeSecondValue;
+// 		if (rangeFirst.value != '') {
+// 			rangeFirstValue = rangeFirst.value;
+// 		}
+// 		if (rangeSecond.value != '') {
+// 			rangeSecondValue = rangeSecond.value;
+// 		}
+// 		priceSlider.noUiSlider.set([rangeFirstValue, rangeSecondValue]);
+// 	}
+// }
+
+
+let ranges = document.querySelectorAll('.range');
+
+if (ranges.length > 0) {
+	for (let rangeIndex = 0; rangeIndex < ranges.length; rangeIndex++) {
+
+		const range = ranges[rangeIndex];
+		const rangeMin = +range.getAttribute('data-min')
+		console.log(rangeMin);
+		const rangeMax = +range.getAttribute('data-max')
+		console.log(rangeMax);
+		const rangeFirst = range.querySelector('.range-first');
+		const rangeSecond = range.querySelector('.range-second');
+		const rangeItem = range.querySelector('.range__item');
+
+		// +rangeFirst.value
+		// +rangeSecond.value
+		noUiSlider.create(rangeItem, {
+			start: [0, 0],
+			connect: true,
+			range: {
+				'min': rangeMin,
+				'max': rangeMax
+			}
+		});
+
+
+
+		// rangeItem.noUiSlider.set([1 , 800])
+
+		// console.log(currentMinValue);
+		// console.log(rangeFirst.value = currentMinValue);
+		let rangeInputs = [rangeFirst, rangeSecond];
+		for (let inputIndex = 0; inputIndex < rangeInputs.length; inputIndex++) {
+			const input = rangeInputs[inputIndex];
+			input.min = String(rangeMin);
+			input.max = String(rangeMax);
+
+			input.addEventListener('input', function (event) {
+				// event.preventDefault()
+				// console.log(event.keyCode);
+
+				if (((+this.value) > rangeMin) && ((+this.value) < rangeMax)) {
+					setPriceValues(this)
+				}
+				// event.preventDefault();
+
+				// }
+				// event.preventDefault()
+			});
+			input.addEventListener('keydown', function (event) {
+				if (event.keyCode == 189) {
+					event.preventDefault()
+				}
+			})
+		}
+
+		function setPriceValues(item) {
+			// let rangeCurrentValues = rangeItem.noUiSlider.get();
+			// let currentMinValue = Math.round(+rangeCurrentValues[0])
+			// let currentMaxValue = Math.round(+rangeCurrentValues[1])
+			rangeItem.noUiSlider.set([+rangeFirst.value, +rangeSecond.value])
+
+		}
+
+		setPriceValues()
+		rangeItem.noUiSlider.on('update', function () {
+			let rangeCurrentValues = rangeItem.noUiSlider.get();
+			let currentFirstValue = Math.round(+rangeCurrentValues[0])
+			let currentMaxValue = Math.round(+rangeCurrentValues[1])
+			rangeFirst.value = String(currentFirstValue)
+			rangeSecond.value = String(currentMaxValue)
+		});
+	}
+}
+
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Корзина</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" /> -->
+
+	
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+	<div class="header__pad"></div>
+	
+	<div class="header__content _container">
+		<a class="header__logo" href="/">
+			<img src="img/logo.png" alt="">
+		</a>
+		<div class="header__menu menu">
+			<div class="menu__icon icon-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li><a href="#catalog" class="menu__link">Каталог продуктов</a></li>
+					<li><a href="#what" class="menu__link">Что такое CBD</a></li>
+					<li><a href="#benefits" class="menu__link">Приемущества CBD</a></li>
+					<li><a href="#why" class="menu__link">Почему Neurogan</a></li>
+					<li><a href="#how" class="menu__link">Как принимать CBD</a></li>
+					<li><a href="#delivery" class="menu__link">Доставка</a></li>
+					<li><a href="#contacts" class="menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<a href="cart.html" class="header__cart">
+			<i class="fas fa-shopping-cart"></i>
+		</a>
+	</div>
+</header>
+        <div class="page ">
+            <div class="cart">
+                <div class="cart__container _container">
+                    <h2 class="cart__title title">
+                        Корзина
+                    </h2>
+                    <div class="cart__body">
+                        <div class="cart__items">
+                            <div class="cart-item cart__item">
+                                <div class="cart-item__body">
+                                    <div class="cart-item__img">
+                                        <img src="img/catalog/1.png" alt="">
+                                    </div>
+                                    <div class="cart-item__name">
+                                        CBD масло
+                                        широкого спектра
+                                    </div>
+                                    <div class="cart-item__quantity quantity">
+                                        <div class="quantity__button quantity__button_plus"></div>
+                                        <div class="quantity__input">
+                                            <input class="" name="quantity" type="text" value="1">
+                                        </div>
+                                        <div class="quantity__button quantity__button_minus"></div>
+                                    </div>
+
+                                    <div class="cart-item__price">
+                                        <span>945</span> грн
+                                    </div>
+                                    <div class="cart-item__del">
+                                        <img src="img/icons/close.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item cart__item">
+                                <div class="cart-item__body">
+                                    <div class="cart-item__img">
+                                        <img src="img/catalog/1.png" alt="">
+                                    </div>
+                                    <div class="cart-item__name">
+                                        CBD масло
+                                        широкого спектра
+                                    </div>
+                                    <div class="cart-item__quantity quantity">
+                                        <div class="quantity__button quantity__button_plus"></div>
+                                        <div class="quantity__input">
+                                            <input class="" name="quantity" type="text" value="1">
+                                        </div>
+                                        <div class="quantity__button quantity__button_minus"></div>
+                                    </div>
+
+                                    <div class="cart-item__price">
+                                        <span>945</span> грн
+                                    </div>
+                                    <div class="cart-item__del">
+                                        <img src="img/icons/close.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="cart__form cart-form" action="send.php" method="post" data-ajax='1'
+                            data-messange="thanks">
+                            <div class="cart-form__title">Введите ваши данные</div>
+                            <input class="" required type="text" name="name" placeholder="Имя">
+                            <input class="" required type="tel" name="phone" data-mask="+380 (99) 999-99-99"
+                                placeholder="Номер телефона">
+                            <input class="" required type="tel" name="sity" placeholder="Город">
+                            <input class="" required type="tel" name="post" placeholder="Отделение новой почты">
+                            <button type="submit" class="cart-form__btn btn">Оформить заказ</button>
+                        </form>
+
+                        <div class="cart__outprice outprice">
+                            <div class="outprice__text"> К оплате :</div>
+                            <div class="outprice__price">
+                                <span>2000</span> грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+	<div class="footer__container _container">
+		<a href="#" class="footer__logo footer-logo">
+			<div class="footer-logo__img">
+				<img src="img/footer_logo.png" alt="">
+			</div>
+			<div class="footer-logo__text">
+				ХИТЫ NEUROGAN
+			</div>
+		</a>
+		<div class="footer__copy">
+			copyright © 2021  Все права защищены
+		</div>
+		
+	</div>
+</footer>
+    </div>
+    <div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<button class="popup__close"></button>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<button class="popup__close"></button>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<button class="popup__close popup__close_video"></button>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+    <!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<!-- <script src="https://kit.fontawesome.com/d7be3dab5a.js" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/d7be3dab5a.js" crossorigin="anonymous"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>

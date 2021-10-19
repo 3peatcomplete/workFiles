@@ -1,0 +1,138 @@
+.contacts {
+
+    // .contacts__container
+
+    &__container {
+    }
+
+    // .contacts__title
+
+    &__title {
+    }
+
+    // .contacts__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: 300px 500px;
+        justify-content: space-between;
+        gap: 30px;
+        @media (max-width:$md2+px){
+        gap: 50px;
+            
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .contacts__info
+
+    &__info {
+    }
+
+    // .contacts__form
+
+    &__form {
+    }
+}
+.section {
+}
+.title {
+}
+.contacts-info {
+
+    // .contacts-info__links
+
+    &__links {
+        display: inline-grid;
+        gap: 10px;
+        margin-bottom: 50px;
+        @media (max-width:$md2+px){
+            gap: 20px;
+        }
+    }
+
+    // .contacts-info__link
+
+    &__link {
+        flex:  0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        i{
+            font-size: 15px;
+            margin-right: 10px;
+            color: $c_blue;
+            flex: 0 0 20px;
+            @media (max-width:$md2+px){
+                font-size: 20px;
+                flex: 0 0 30px;
+
+            }
+        }
+        font-weight: 500;
+        @media (max-width:$md2+px){
+            font-size: 21px;
+        }
+    }
+
+    // .contacts-info__social
+
+    &__social {
+    }
+}
+.fas {
+}
+.fa-phone-alt {
+}
+.far {
+}
+.fa-envelope {
+}
+.social {
+    display: flex;
+    font-size: 40px;
+    line-height: 1;
+    color: $c_f;
+    justify-content: space-between;
+    // .social__item
+
+    &__item {
+        display: flex;
+        width: 70px ;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+._inst{
+    background-color: #f41a96;
+}
+._fb{
+    background-color: $c_blue;
+}
+._tg{
+    background-color: rgb(0, 149, 255);
+}
+
+.fab {
+}
+.fa-instagram {
+}
+.fa-facebook-f {
+}
+.fa-telegram-plane {
+}
+
+.btn {
+
+    // .btn_form
+
+    &_form {
+    }
+}

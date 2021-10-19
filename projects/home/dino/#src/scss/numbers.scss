@@ -1,0 +1,75 @@
+.numbers {
+    position: relative;
+    padding-bottom: 70px;
+    margin-bottom: 80px;
+    @media (max-width:$md2+px){
+        padding-bottom: 60px;
+        margin-bottom: 70px;
+    }
+    // .numbers__container
+
+    &__container {
+        position: relative;
+        z-index: 2;
+    }
+
+    // .numbers__body
+
+    &__body {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 34px;
+        @media (max-width:$md2+px){
+            gap: 20px;
+        }
+    }
+
+    // .numbers__item
+
+    &__item {
+        flex: 1 1 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width:$md2+px){
+            justify-content: flex-start;
+            flex: 1 1 100%;
+        }
+    }
+
+    // .numbers__item-number
+
+    &__item-number {
+        font-weight: bold;
+        font-size: 64px;
+        margin-right: 20px;
+        @media (max-width:$md2+px){
+            font-size: 24px;
+            margin-right: 15px;
+        }
+    }
+
+    // .numbers__item-text
+
+    &__item-text {
+        @media (max-width:$md2+px){
+            font-size: 14px;
+            
+        }
+    }
+}
+
+.numbers__decor{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    @media (max-width:$md2+px){
+        bottom: 0;
+    }
+    img{
+        width: 100%;
+        height: 615px;
+    }
+}

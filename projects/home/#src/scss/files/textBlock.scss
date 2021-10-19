@@ -1,0 +1,29 @@
+.text-block {
+
+    // .text-block__container
+
+    &__container {
+    }
+
+    // .text-block__title
+
+    &__title {
+        font-weight: 400;
+        
+    }
+
+    // .text-block__row
+
+    &__row {
+    }
+
+    // .text-block__column
+
+    &__column {
+        p{
+            margin-top: 30px;
+        }
+    }
+}
+.title {
+}

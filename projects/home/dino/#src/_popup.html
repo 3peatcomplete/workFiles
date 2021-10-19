@@ -1,0 +1,59 @@
+<div class="popup popup_callback">
+	<div class="popup__content">
+		<div class="popup__body form-popup">
+			<div class="popup__close"></div>
+			<form method="POST" action="send.php" data-message='message' data-ajax='1' class="popup-form">
+
+
+				<div class="contacts-form__text main-form__text popup-form__text">
+					Подать заявку в группу
+				</div>
+				<div class="contacts-form__row popup-form__row">
+					<label class="contacts-form__input">
+						<div class="contacts-form__input-text">Им’я</div>
+						<input required autocomplete="off" type="text" name="name" class="input ">
+					</label>
+					<label class="contacts-form__input">
+						<div class="contacts-form__input-text">E-mail</div>
+						<input required autocomplete="off" type="email" name="email" class="input">
+					</label>
+					<label class="contacts-form__input">
+						<div class="contacts-form__input-text">Phone</div>
+						<input required autocomplete="off" type="number" name="tel" class="input">
+					</label>
+					<button type="submit" class="contacts-form__btn btn btn-orange">
+						Подать заявку
+					</button>
+				</div>
+
+
+			</form>
+		</div>
+	</div>
+</div>
+<div class="popup popup_message">
+	<div class="popup__content">
+		<div class="popup__body form-popup ths-popup">
+			<div class="popup__close"></div>
+			<div class="ths">
+				<div class="ths__title">
+					Спасибо!
+				</div>
+				<div class="ths__text">
+					Ваша заявка принята, наш менеджер свяжеться с вами в ближайшее время
+				</div>
+
+				<a href="#" class="btn btn-orange ths-btn">На главную</a>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,107 @@
+.how {
+    background-image: url(../img/how_bg.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    margin-bottom: 55px;
+    // .how__container
+
+    &__container {
+        max-width: 720px;
+    }
+
+    // .how__spn
+
+    &__spn {
+    }
+
+    // .how__body
+
+    &__body {
+    }
+
+    // .how__item
+
+    &__item {
+    }
+}
+.spn {
+    // .spn__body
+
+    &__body {
+    }
+
+    // .spn__icon
+
+    &__icon {
+    }
+
+    // .spn__text
+
+    &__text {
+    }
+}
+.how-item {
+    margin-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #2f354c;
+    display: flex;
+    align-items: center;
+    @media (max-width: $md2+px) {
+        flex-direction: column;
+    }
+    // .how-item__list
+
+    &__list {
+        margin-right: 20px;
+        max-width: 580px;
+        li {
+            margin-bottom: 15px;
+            padding-left: 75px;
+            display: flex;
+            position: relative;
+
+            &:first-child {
+                list-style: none;
+                font-weight: bold;
+                font-size: 18px;
+                color: #2f354c;
+            }
+            &:not(:first-child) {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 50px;
+                    top: 7px;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: $c_0;
+                    flex: 0 0 12px;
+                    @media (max-width:$md2+px){
+                        left: 10px;
+                    }
+                }
+            }
+            @media (max-width: $md2+px) {
+                padding-left: 35px;
+            }
+        }
+        @media (max-width: $md2+px) {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+    }
+
+    // .how-item__img
+
+    &__img {
+        flex: 0 1 75px;
+        @media (max-width: $md2+px) {
+            flex: auto;
+            width: 200px;
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.529" height="43.982" viewBox="0 0 40.529 43.982">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-46.09" y1="-100.135" x2="-46.2" y2="-101.134" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb34a"/>
+      <stop offset="0.433" stop-color="#ff8b4a"/>
+      <stop offset="0.628" stop-color="#fc884a"/>
+      <stop offset="0.754" stop-color="#f47f4c"/>
+      <stop offset="0.86" stop-color="#e57050"/>
+      <stop offset="0.955" stop-color="#d15c55"/>
+      <stop offset="1" stop-color="#c54f59"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-252.288" y1="-76.337" x2="-252.398" y2="-77.336" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="-234.383" y1="129.809" x2="-234.492" y2="128.81" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-31.549" y1="107.421" x2="-30.793" y2="106.759" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb34a"/>
+      <stop offset="0.198" stop-color="#ff8b4a"/>
+      <stop offset="0.474" stop-color="#fc884a"/>
+      <stop offset="0.651" stop-color="#f47f4c"/>
+      <stop offset="0.802" stop-color="#e57050"/>
+      <stop offset="0.936" stop-color="#d15c55"/>
+      <stop offset="1" stop-color="#c54f59"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.091" y1="0.25" x2="1.05" y2="0.836" xlink:href="#linear-gradient-4"/>
+    <linearGradient id="linear-gradient-7" x1="0.263" y1="-0.481" x2="0.514" y2="0.557" xlink:href="#linear-gradient-4"/>
+    <linearGradient id="linear-gradient-8" x1="0.153" y1="0.804" x2="1.008" y2="0.056" xlink:href="#linear-gradient-4"/>
+    <linearGradient id="linear-gradient-9" x1="0.136" y1="0.278" x2="0.989" y2="0.799" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb34a"/>
+      <stop offset="0.198" stop-color="#ff8b4a"/>
+      <stop offset="0.449" stop-color="#fc884a"/>
+      <stop offset="0.611" stop-color="#f47f4c"/>
+      <stop offset="0.747" stop-color="#e57050"/>
+      <stop offset="0.869" stop-color="#d15c55"/>
+      <stop offset="0.928" stop-color="#c54f59"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="-135.063" y1="14.125" x2="-134.209" y2="14.647" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb34a"/>
+      <stop offset="0.226" stop-color="#ff8b4a"/>
+      <stop offset="0.406" stop-color="#f8844b"/>
+      <stop offset="0.667" stop-color="#e57150"/>
+      <stop offset="0.975" stop-color="#c75158"/>
+      <stop offset="1" stop-color="#c54f59"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.08" stop-color="#ff8b4a"/>
+      <stop offset="0.397" stop-color="#fc884a"/>
+      <stop offset="0.6" stop-color="#f47f4c"/>
+      <stop offset="0.773" stop-color="#e57050"/>
+      <stop offset="0.926" stop-color="#d15c55"/>
+      <stop offset="1" stop-color="#c54f59"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_898" data-name="Сгруппировать 898" transform="translate(-206.055 -27.274)">
+    <g id="Сгруппировать_228" data-name="Сгруппировать 228" transform="translate(206.105 27.273)">
+      <path id="Контур_133" data-name="Контур 133" d="M1790.66,116.544l-1.78-5.34-5.34-1.78,5.728-5.728,7.12,7.12Z" transform="translate(-1782.385 -78.392)" fill="url(#linear-gradient)"/>
+      <path id="Контур_134" data-name="Контур 134" d="M1789.688,115.882l-1.78-5.34,3.549-3.872,3.96,3.484Z" transform="translate(-1781.414 -77.73)" fill="#c0545b" opacity="0.51"/>
+      <path id="Контур_135" data-name="Контур 135" d="M1784.113,91.76l5.34-1.78,1.78-5.34,5.728,5.728-7.12,7.12Z" transform="translate(-1782.258 -82.633)" fill="url(#linear-gradient-2)"/>
+      <path id="Контур_136" data-name="Контур 136" d="M1790.26,84.64l-1.78,5.34,3.43,3.609,4.265-3.051Z" transform="translate(-1781.286 -82.633)" fill="#c0545b" opacity="0.44"/>
+      <path id="Контур_137" data-name="Контур 137" d="M1809.413,84.64l1.78,5.34,5.34,1.78-5.729,5.728-7.12-7.12Z" transform="translate(-1777.903 -82.633)" fill="url(#linear-gradient-3)"/>
+      <path id="Контур_138" data-name="Контур 138" d="M1810.461,89.008l-3.487,3.609,2.4,4.591,6.424-6.419Z" transform="translate(-1777.171 -81.661)" fill="#c0545b" opacity="0.49"/>
+      <path id="Контур_139" data-name="Контур 139" d="M1816.533,109.424l-5.34,1.78-1.78,5.34-5.729-5.728,7.12-7.12Z" transform="translate(-1777.903 -78.392)" fill="url(#linear-gradient-4)"/>
+      <path id="Контур_140" data-name="Контур 140" d="M1810.551,111.247l-3.983-3.914,3.342-3.831,5.981,5.965Z" transform="translate(-1777.261 -78.435)" fill="#c0545b" opacity="0.48"/>
+      <rect id="Прямоугольник_42" data-name="Прямоугольник 42" width="10.043" height="10.043" rx="2.753" transform="translate(0 14.644)" fill="url(#linear-gradient-5)"/>
+      <rect id="Прямоугольник_43" data-name="Прямоугольник 43" width="10.043" height="10.043" rx="2.753" transform="translate(30.436 14.644)" fill="url(#linear-gradient-5)"/>
+      <rect id="Прямоугольник_44" data-name="Прямоугольник 44" width="10.043" height="10.043" rx="2.753" transform="translate(15.192 0.001)" fill="url(#linear-gradient-7)"/>
+      <rect id="Прямоугольник_45" data-name="Прямоугольник 45" width="10.043" height="10.043" rx="2.753" transform="translate(15.192 30.11)" fill="url(#linear-gradient-8)"/>
+      <ellipse id="Эллипс_26" data-name="Эллипс 26" cx="16.508" cy="16.508" rx="16.508" ry="16.508" transform="translate(3.707 3.798)" fill="url(#linear-gradient-9)"/>
+      <ellipse id="Эллипс_27" data-name="Эллипс 27" cx="13.767" cy="13.767" rx="13.767" ry="13.767" transform="translate(6.447 6.538)" fill="url(#linear-gradient-10)"/>
+      <ellipse id="Эллипс_28" data-name="Эллипс 28" cx="7.032" cy="5.94" rx="7.032" ry="5.94" transform="translate(11.969 20.084)" fill="#c0545b" opacity="0.79"/>
+      <g id="Сгруппировать_61" data-name="Сгруппировать 61" transform="translate(10.625 10.044)">
+        <path id="Контур_141" data-name="Контур 141" d="M1800.96,111.2c-4.275,0-9.268-2.565-9.268-9.791,0-6.781,4.656-9.818,9.268-9.818,4.663,0,7.964,2.681,8.831,7.171l.088.461-5.907.973-.094-.421a2.959,2.959,0,0,0-2.917-2.63c-1.9,0-3.083,1.635-3.083,4.263s1.181,4.236,3.083,4.236a3,3,0,0,0,2.943-2.7l.093-.425,5.88,1-.086.456C1808.943,108.5,1805.642,111.2,1800.96,111.2Z" transform="translate(-1791.197 -91.131)" fill="#f4b44d"/>
+        <path id="Контур_142" data-name="Контур 142" d="M1801.008,92.126c3.514,0,7.405,1.731,8.383,6.8l-5.02.828a3.4,3.4,0,0,0-3.363-2.987c-2.083,0-3.538,1.732-3.538,4.719,0,2.961,1.455,4.693,3.538,4.693a3.431,3.431,0,0,0,3.389-3.062l4.994.853c-.953,5.094-4.844,6.851-8.383,6.851-4.467,0-8.809-2.71-8.809-9.335,0-6.451,4.342-9.362,8.809-9.362m0-.912c-4.839,0-9.721,3.177-9.721,10.274,0,7.564,5.237,10.249,9.721,10.249,4.921,0,8.389-2.84,9.279-7.6l.171-.911-.913-.156-4.994-.853-.858-.147-.187.851a2.551,2.551,0,0,1-2.5,2.345c-1.62,0-2.626-1.449-2.626-3.78,0-2.348,1.006-3.807,2.626-3.807a2.478,2.478,0,0,1,2.473,2.274l.188.841.851-.141,5.019-.828.925-.153-.177-.919c-.911-4.723-4.379-7.542-9.279-7.542Z" transform="translate(-1791.287 -91.214)" fill="url(#linear-gradient-11)"/>
+        <path id="Контур_143" data-name="Контур 143" d="M1804.437,101.819l4.169.719a7.483,7.483,0,0,1-7.41,5.9c-8.011.357-8.665-7.4-8.665-7.4l4.23-1.429s-.378,4.929,3.826,5.166A3.69,3.69,0,0,0,1804.437,101.819Z" transform="translate(-1791.01 -89.346)" fill="#ffc878"/>
+        <path id="Контур_144" data-name="Контур 144" d="M1802.1,97.683l3.982-1.582a10.352,10.352,0,0,1,.4,1.249l-4.259.716Z" transform="translate(-1788.881 -90.126)" fill="#ffc878"/>
+        <path id="Контур_145" data-name="Контур 145" d="M1792.835,98.46l10.154-5.559s-2.606-1.152-6.665.818C1793.845,94.921,1792.835,98.46,1792.835,98.46Z" transform="translate(-1790.942 -90.913)" fill="#ffc878"/>
+      </g>
+      <path id="Контур_146" data-name="Контур 146" d="M1807.386,103.242a7.441,7.441,0,0,1-6.9,4.416,8.456,8.456,0,0,1-4.744-1.022Z" transform="translate(-1779.669 -78.493)" fill="#ffddb0"/>
+    </g>
+  </g>
+</svg>
